@@ -53,79 +53,134 @@
 <body>
 <header>
     <div class="container">
-        <div class="row py-2 menu">
-            <div class="col-2">
-                <div class="d-flex">
-                    <a href="https://diriusplus.com/">
-                        <picture>
-                            <source media="(min-width: 1000px)"
-                                    srcset="./images/logo/transparent-logo.webp"
-                                    type="image/webp">
-                            <source media="(min-width: 1000px)"
-                                    srcset="./images/logo/transparent-logo.png"
-                                    type="image/jpg">
+        <input type="checkbox" name="check" id="check">
+        <div class="logo-container">
+            <h3 class="logo">Brand<span>Name</span></h3>
+        </div>
 
-                            <source media="(min-width: 320px)"
-                                    srcset="./images/logo/transparent-logo.webp"
-                                    type="image/webp">
-                            <source media="(min-width: 320px)"
-                                    srcset="./images/logo/transparent-logo.png"
-                                    type="image/jpg">
-
-                            <img class="img-fluid" src="./images/logo/transparent-logo.png"
-                                 width="94" height="80"
-                                 alt="dirius-plus-logo">
-                        </picture>
-                    </a>
-                </div>
+        <div class="nav-btn">
+            <div class="nav-links">
+                <ul>
+                    <li class="nav-link" style="--i: .6s">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-link" style="--i: .85s">
+                        <a href="#">Menu<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="dropdown-link">
+                                    <a href="#">Link 1</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Link 2</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+                                    <div class="dropdown second">
+                                        <ul>
+                                            <li class="dropdown-link">
+                                                <a href="#">Link 1</a>
+                                            </li>
+                                            <li class="dropdown-link">
+                                                <a href="#">Link 2</a>
+                                            </li>
+                                            <li class="dropdown-link">
+                                                <a href="#">Link 3</a>
+                                            </li>
+                                            <li class="dropdown-link">
+                                                <a href="#">More<i class="fas fa-caret-down"></i></a>
+                                                <div class="dropdown second">
+                                                    <ul>
+                                                        <li class="dropdown-link">
+                                                            <a href="#">Link 1</a>
+                                                        </li>
+                                                        <li class="dropdown-link">
+                                                            <a href="#">Link 2</a>
+                                                        </li>
+                                                        <li class="dropdown-link">
+                                                            <a href="#">Link 3</a>
+                                                        </li>
+                                                        <div class="arrow"></div>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <div class="arrow"></div>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Link 4</a>
+                                </li>
+                                <div class="arrow"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-link" style="--i: 1.1s">
+                        <a href="#">Services<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="dropdown-link">
+                                    <a href="#">Link 1</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Link 2</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+                                    <div class="dropdown second">
+                                        <ul>
+                                            <li class="dropdown-link">
+                                                <a href="#">Link 1</a>
+                                            </li>
+                                            <li class="dropdown-link">
+                                                <a href="#">Link 2</a>
+                                            </li>
+                                            <li class="dropdown-link">
+                                                <a href="#">Link 3</a>
+                                            </li>
+                                            <li class="dropdown-link">
+                                                <a href="#">More<i class="fas fa-caret-down"></i></a>
+                                                <div class="dropdown second">
+                                                    <ul>
+                                                        <li class="dropdown-link">
+                                                            <a href="#">Link 1</a>
+                                                        </li>
+                                                        <li class="dropdown-link">
+                                                            <a href="#">Link 2</a>
+                                                        </li>
+                                                        <li class="dropdown-link">
+                                                            <a href="#">Link 3</a>
+                                                        </li>
+                                                        <div class="arrow"></div>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <div class="arrow"></div>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Link 4</a>
+                                </li>
+                                <div class="arrow"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-link" style="--i: 1.35s">
+                        <a href="#">About</a>
+                    </li>
+                </ul>
             </div>
-            <div id="hamburger"
-                 class="col-3 d-md-none d-flex align-self-center justify-content-center ms-auto">
-                <span id="hamburgerImg" class="hamburgerHam">&equiv;</span></div>
-            <ul id="nav"
-                class="col-md-10 col-12 nav d-md-flex justify-content-between align-items-center flex-md-row d-none">
-                <li class="aktivno"><a href="https://diriusplus.com/">Početna</a></li>
-                <li>
-                    <a href="oprema-za-markete.html">Oprema za markete</a><span class="color-grey"
-                                                                                id="opremaMarketiStrelica"> &#9660;
-                </span>
-                    <ul id="opremaMarketiMenu" class="dropdown-menu">
-                        <li><a class="dropdown-item" href="police-za-markete.html">Police za
-                            markete</a></li>
-                        <li><a class="dropdown-item" href="korpe-za-markete.html">Korpe za
-                            markete</a></li>
-                        <li><a class="dropdown-item" href="kolica-za-markete.html">Kolica za
-                            markete</a></li>
-                        <li><a class="dropdown-item" href="kasa-pultovi.html">Kasa pultovi</a></li>
-                    </ul>
-                </li>
-                <li><a href="magacinske-police.html">Magacinske police</a><span class="color-grey"
-                                                                                id="magacinskePoliceStrelica"> &#9660;</span>
-                    <ul id="magacinskePoliceMenu" class="dropdown-menu">
-                        <li><a class="dropdown-item" href="paletni-regali.html">Paletni regali</a>
-                        </li>
-                        <li><a class="dropdown-item" href="policni-regali.html">Polični regali</a>
-                        </li>
+            <div class="log-sign" style="--i: 1.8s">
+                <a href="#" class="btn transparent">Log in</a>
+                <a href="#" class="btn solid">Sign up</a>
+            </div>
+        </div>
 
-                    </ul>
-                </li>
-                <!--                <li><a href="#">Dodatna oprema</a><span class="color-grey"-->
-                <!--                                                        id="dodatnaOpremaStrelica"> &#9660;</span>-->
-                <!--                    <ul id="dodatnaOpremaMenu" class="dropdown-menu">-->
-                <!--                        <li><a class="dropdown-item" href="">Automatski ulaz</a></li>-->
-                <!--                        <li><a class="dropdown-item" href="">Mehanički ulaz</a></li>-->
-                <!--                        <li><a class="dropdown-item" href="">Barijerna ograda</a></li>-->
-                <!--                        <li><a class="dropdown-item" href="">Gravitacione posude za rinfuz</a></li>-->
-                <!--                        <li><a class="dropdown-item" href="">Posuda sa lopaticom</a></li>-->
-                <!--                        <li><a class="dropdown-item" href="">Stalak sa ramom</a></li>-->
-                <!--                        <li><a class="dropdown-item" href="">Ramovi A3 i A4</a></li>-->
-
-                <!--                    </ul>-->
-                <!--                </li>-->
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-
-
+        <div class="hamburger-menu-container">
+            <div class="hamburger-menu">
+                <div></div>
+            </div>
         </div>
     </div>
 </header>
@@ -133,28 +188,31 @@
     <section>
         <div class="hero-div">
             <picture>
-                <source media="(min-width: 934px)" srcset="images/dirius-police-za-markete.webp"
+                <source media="(min-width: 934px)" srcset="images/preseli-se-hero.jpg"
                         type="image/webp">
-                <source media="(min-width: 934px)" srcset="images/dirius-police-za-markete.jpg"
+                <source media="(min-width: 934px)" srcset="images/preseli-se-hero.jpg"
                         type="image/jpg">
-                <source media="(min-width: 501px)" srcset="images/dirius-police-za-markete_tab.webp"
+                <source media="(min-width: 501px)" srcset="images/preseli-se-hero.jpg"
                         type="image/webp">
-                <source media="(min-width: 501px)" srcset="images/dirius-police-za-markete_tab.jpg"
+                <source media="(min-width: 501px)" srcset="images/preseli-se-hero.jpg"
                         type="image/jpg">
-                <source media="(max-width: 500px)" srcset="images/dirius-police-za-markete_mob.webp"
+                <source media="(max-width: 500px)" srcset="images/preseli-se-hero.jpg"
                         type="image/webp">
-                <source media="(max-width: 500px)" srcset="images/dirius-police-za-markete_mob.jpg"
+                <source media="(max-width: 500px)" srcset="images/preseli-se-hero.jpg"
                         type="image/jpg">
 
-                <img class="d-block img-fluid hero-img" src="images/dirius-police-za-markete.jpg"
-                     alt="dirius-police-za-markete" width="1920" height="950">
+                <img class="d-block img-fluid hero-img" src="images/preseli-se-hero.jpg"
+                     alt="preseli-se-hero" width="1920" height="930">
             </picture>
             <div class="d-flex flex-column hero-pozadina justify-content-center">
-                <h1 class="mx-auto hero-cap text-center">Oprema i police za markete i magacine</h1>
-                <p class="mx-auto hero-p text-center p-1">Dirius plus Beograd</p>
+                <h1 class="mx-auto hero-cap text-center">A1 selidbe Beograd</h1>
+<!--                <p class="mx-auto hero-p text-center p-1">#</p>-->
             </div>
         </div>
     </section>
+<!--    <section class="hero-section">-->
+<!--        <div class="overlay"></div>-->
+<!--    </section>-->
     <section class="usluge py-5">
         <div class="container">
             <hr class="hr-text my-5" data-content="Proizvodi">
