@@ -5099,12 +5099,12 @@
 
 /*NAV*/
 :root {
-    --clr-bg-header: #3D8361;
-    --clr-btn: #3D8361;
-    --clr-dropdown: #1C6758;
-    --clr-nav-hover: #1E6F5C;
-    --clr-dropdown-hov: #289672;
-    --clr-dropdown-link-hov: #29BB89;
+    --clr-bg-header: #ff0000;
+    --clr-btn: #ff0000;
+    --clr-dropdown: #e60000;
+    --clr-nav-hover: #e60000;
+    --clr-dropdown-hov: #ff1a1a;
+    --clr-dropdown-link-hov: #ff3333;
     --clr-light: #FAFAFA;
 }
 
