@@ -5119,7 +5119,7 @@
 /*    overflow: hidden;*/
 /*}*/
 
-ul {
+header ul {
     list-style: none;
 }
 
@@ -5152,7 +5152,7 @@ header {
 /*    background-color: rgba(30, 130, 95, 0.5);*/
 /*}*/
 
-.container {
+header .container {
     max-width: 65rem;
     padding: 0 2rem;
     margin: 0 auto;
@@ -5182,18 +5182,6 @@ header {
     flex: 1;
 }
 
-.logo {
-    color: var(--clr-light);
-    font-size: 1.1rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    line-height: 3rem;
-}
-
-.logo span {
-    font-weight: 300;
-}
 
 .btn {
     display: inline-block;
@@ -5422,7 +5410,7 @@ header {
     .nav-btn {
         position: fixed;
         height: calc(100vh - 3rem);
-        top: 3rem;
+        top: 6rem;
         left: 0;
         width: 100%;
         background-color: var(--clr-btn);
