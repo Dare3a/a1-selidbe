@@ -5558,10 +5558,10 @@ header .container {
     top: 40%;
     transform: translateY(-40%);
     background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(56, 62, 66, 0.7); /* Green background with 0.5 opacity */
+    background: rgba(34, 37, 61, 0.7); /* Green background with 0.5 opacity */
     color: #f1f1f1;
-    border-top: 1px solid #b29d5f;
-    border-bottom: 1px solid #b29d5f;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
     width: 100%;
     height: auto;
 }
