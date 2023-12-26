@@ -5597,8 +5597,10 @@ header .btn {
     color: black;
 }
 .interesting {
-    background-image: url("../images/parazit-tirk.jpg");
-    background-size: cover;
+    background-image: url("../images/Overview1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .interesting-pozadina {
