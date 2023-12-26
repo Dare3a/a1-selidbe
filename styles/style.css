@@ -5602,11 +5602,27 @@ header .btn {
 }
 
 .interesting-pozadina {
-    background-color: rgba(73, 161, 175, 0.5);
+    background-color: rgba(34, 37, 61, 0.5);
 }
 .rounded-div {
     height: 200px;
     width: 200px;
-    background-color: white;
+    background-color: rgb(34, 37, 61);
+    color: white;
+    border: 1px solid white;
     border-radius: 50%;
+}
+.rounded-div-red {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.text-light {
+    color: white;
+}
+.font-20 {
+    font-size:20px;
 }
