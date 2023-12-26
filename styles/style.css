@@ -5596,3 +5596,17 @@ header .btn {
 .black {
     color: black;
 }
+.interesting {
+    background-image: url("../images/parazit-tirk.jpg");
+    background-size: cover;
+}
+
+.interesting-pozadina {
+    background-color: rgba(73, 161, 175, 0.5);
+}
+.rounded-div {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50%;
+}
