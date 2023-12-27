@@ -5597,14 +5597,14 @@ header .btn {
     color: black;
 }
 .interesting {
-    background-image: url("../images/Overview1.png");
-    background-size: contain;
+    background-image: url("../images/kartonske-kutije.png");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .interesting-pozadina {
-    background-color: rgba(34, 37, 61, 0.5);
+    background-color: rgba(34, 37, 61, 0.6);
 }
 .rounded-div {
     height: 200px;
