@@ -5631,3 +5631,6 @@ header .btn {
 .preventiva {
     background-color: rgb(34, 37, 61);
 }
+.text-center {
+    text-align: center;
+}
