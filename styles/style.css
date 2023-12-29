@@ -5693,7 +5693,7 @@ header .btn {
 }
 .usluge .card-usluge {
     background-color: #bbc0c4;
-    border-bottom: 2px solid #37646D;
+    border-bottom: 2px solid #22253d;
     box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px, rgba(0, 0, 0, 0.22) 0 4px 4px;
 }
 
@@ -5702,7 +5702,7 @@ header .btn {
 }
 
 .usluge .card-title {
-    color: #37646D;
+    color: #22253d;
     font-weight: bold;
 }
 
