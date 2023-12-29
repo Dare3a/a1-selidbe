@@ -5699,7 +5699,7 @@ header .btn {
     background-color: #bbc0c4;
     border-top: 2px solid #22253d;
     border-bottom: 2px solid #22253d;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px, rgba(0, 0, 0, 0.22) 0 4px 4px;
+    /*box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px, rgba(0, 0, 0, 0.22) 0 4px 4px;*/
 }
 
 .card-usluge:hover {
