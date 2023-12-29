@@ -5665,7 +5665,7 @@ header .btn {
 
 .rounded-img {
     border-radius: 50%;
-    outline: 4px solid rgb(34, 37, 61);
+    outline: 4px solid #22253d;
 }
 .widget-title span {
     background: red none repeat scroll 0 0;
@@ -5678,15 +5678,16 @@ header .btn {
 }
 .btn-urban {
     font-size: 16px;
-    color: white;
-    background-color: #22253d;
+    color: #22253d;
+    background-color: white;
+    outline: 1px solid red;
     padding: 4px 20px;
     /* border-radius: 5px; */
     /* box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.50); */
     text-decoration: none;
 }
 .btn-urban:hover {
-    color: #22253d;
-    background-color: white;
-    outline: 1px solid #22253d;
+    color: white;
+    background-color: #22253d;
+    outline: none;
 }
