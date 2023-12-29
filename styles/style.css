@@ -5667,6 +5667,7 @@ header .btn {
     border-radius: 50%;
     outline: 4px solid #22253d;
 }
+
 .widget-title span {
     background: red none repeat scroll 0 0;
     display: block;
@@ -5676,6 +5677,7 @@ header .btn {
     position: relative;
     width: 50px;
 }
+
 .btn-urban {
     font-size: 16px;
     color: #22253d;
@@ -5686,13 +5688,16 @@ header .btn {
     /* box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.50); */
     text-decoration: none;
 }
+
 .btn-urban:hover {
     color: white;
     background-color: #22253d;
     outline: none;
 }
+
 .usluge .card-usluge {
     background-color: #bbc0c4;
+    border-top: 2px solid #22253d;
     border-bottom: 2px solid #22253d;
     box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px, rgba(0, 0, 0, 0.22) 0 4px 4px;
 }
@@ -5722,8 +5727,17 @@ header .btn {
     flex-shrink: 1;
     flex-basis: 0;
 }
+
 @media (min-width: 768px) {
     .card-align {
         flex-direction: row;
     }
+}
+
+.blue-filter {
+    filter: brightness(0) saturate(100%) invert(10%) sepia(8%) saturate(4394%) hue-rotate(196deg) brightness(94%) contrast(86%);
+}
+
+.red-filter {
+    filter: brightness(0) saturate(100%) invert(10%) sepia(100%) saturate(6986%) hue-rotate(4deg) brightness(102%) contrast(111%);
 }
