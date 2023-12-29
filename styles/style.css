@@ -7,6 +7,7 @@
 * {
     font-family: 'Rajdhani', sans-serif;
 }
+
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -5314,7 +5315,7 @@ header .btn {
 }
 
 .nav-link:hover > .dropdown,
-.dropdown-link:hover>.dropdown {
+.dropdown-link:hover > .dropdown {
     transform: translate(0, 0);
     opacity: 1;
     pointer-events: auto;
@@ -5475,12 +5476,12 @@ header .btn {
     }
 
     .nav-link:hover > .dropdown,
-    .dropdown-link:hover>.dropdown {
+    .dropdown-link:hover > .dropdown {
         display: block;
     }
 
     .nav-link:hover > a > i,
-    .dropdown-link:hover>a>i {
+    .dropdown-link:hover > a > i {
         transform: rotate(360deg);
     }
 
@@ -5553,9 +5554,11 @@ header .btn {
     height: auto;
     object-fit: cover;
 }
+
 .hero-div {
     position: relative;
 }
+
 .hero-pozadina {
     position: absolute;
     top: 40%;
@@ -5593,12 +5596,15 @@ header .btn {
     /*padding-bottom: 1.25rem;*/
     /*text-align: center;*/
 }
+
 .red {
     color: red;
 }
+
 .black {
     color: black;
 }
+
 .interesting {
     background-image: url("../images/kartonske-kutije.png");
     background-size: cover;
@@ -5609,6 +5615,7 @@ header .btn {
 .interesting-pozadina {
     background-color: rgba(34, 37, 61, 0.6);
 }
+
 .rounded-div {
     height: 200px;
     width: 200px;
@@ -5617,6 +5624,7 @@ header .btn {
     border: 1px solid white;
     border-radius: 50%;
 }
+
 .rounded-div-red {
     height: 200px;
     width: 200px;
@@ -5625,24 +5633,36 @@ header .btn {
     border: 1px solid white;
     border-radius: 50%;
 }
+
 .text-light {
     color: white;
 }
+
 .font-20 {
-    font-size:20px;
+    font-size: 20px;
 }
+
 .font-17 {
-    font-size:17px;
+    font-size: 17px;
 }
+
 .preventiva {
     background-color: rgb(34, 37, 61);
 }
+
 .preventiva p {
     font-size: 17px;
 }
+
 .why p {
     font-size: 17px;
 }
+
 .text-center {
     text-align: center;
+}
+
+.rounded-img {
+    border-radius: 50%;
+    border: 3px solid rgb(34, 37, 61);
 }
