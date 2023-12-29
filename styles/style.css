@@ -5665,5 +5665,5 @@ header .btn {
 
 .rounded-img {
     border-radius: 50%;
-    border: 3px solid rgb(34, 37, 61);
+    outline: 4px solid rgb(34, 37, 61);
 }
