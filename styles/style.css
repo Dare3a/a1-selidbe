@@ -5605,7 +5605,12 @@ header .btn {
 .black {
     color: black;
 }
-
+.blue {
+    color: #22253d;
+}
+.w-500 {
+    font-weight: 500;
+}
 .interesting {
     background-image: url("../images/kartonske-kutije.png");
     background-size: cover;
