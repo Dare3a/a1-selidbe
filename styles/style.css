@@ -5747,3 +5747,75 @@ header .btn {
 .red-filter {
     filter: brightness(0) saturate(100%) invert(10%) sepia(100%) saturate(6986%) hue-rotate(4deg) brightness(102%) contrast(111%);
 }
+/*testemonial*/
+
+/*.single-testimonial p {*/
+/*    font-size: 1em;*/
+/*    font-family: 'Roboto', sans-serif;*/
+/*    line-height: 1.6;*/
+/*    padding: 1em;*/
+/*}*/
+
+.slider-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimonials {
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1000px;
+    height: 450px;
+}
+
+.single-testimonial {
+    position: absolute;
+    width: 400%;
+    left: 0;
+    animation: 20s slider infinite;
+    -webkit-animation: 20s slider infinite;
+    border-top: 1px solid #c2c1c2;
+    border-bottom: 1px solid #c2c1c2;
+    margin: 0;
+}
+
+.testim {
+    width: 25%;
+    margin: 0;
+    float: left;
+    padding-bottom: 1em;
+}
+
+@-webkit-keyframes slider {
+    0%  { transform: translateX(0%); }
+    25% { transform: translateX(0%); }
+    33% { transform: translateX(-25%); }
+    58% { transform: translateX(-25%); }
+    66% { transform: translateX(-50%); }
+    91% { transform: translateX(-50%); }
+    100%{ transform: translateX(-75%); }
+}
+
+@keyframes slider {
+    0%  { transform: translateX(0%); }
+    25% { transform: translateX(0%); }
+    33% { transform: translateX(-25%); }
+    58% { transform: translateX(-25%); }
+    66% { transform: translateX(-50%); }
+    91% { transform: translateX(-50%); }
+    100%{ transform: translateX(-75%); }
+}
+
+.testim-name {
+    padding: 1em;
+    float: right;
+    margin-right: 2em;
+}
+
+@media(min-width:750px) {
+    .testimonials{
+        height: 150px;
+    }
+}
