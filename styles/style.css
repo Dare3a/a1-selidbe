@@ -5776,8 +5776,6 @@ header .btn {
     left: 0;
     animation: 20s slider infinite;
     -webkit-animation: 20s slider infinite;
-    border-top: 1px solid #c2c1c2;
-    border-bottom: 1px solid #c2c1c2;
     margin: 0;
 }
 
