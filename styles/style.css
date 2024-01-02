@@ -5825,3 +5825,28 @@ header .btn {
     color: #d4af37;
     font-size: 18px;
 }
+
+/*scrollbar*/
+/* Track */
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #e60000;
+    border-radius: 8px;
+    border: 1px solid white;
+}
