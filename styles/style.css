@@ -5826,27 +5826,39 @@ header .btn {
     font-size: 18px;
 }
 
-/*scrollbar*/
-/* Track */
-::-webkit-scrollbar {
-    width: 17px;
+@media (min-width: 768px) {
+    .bottom-menu {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 7%;
+        /*opacity: 0.9;*/
+    }
+
+    .bottom-menu-card {
+        background-color: #ff0000;
+        border: 1px solid white;
+        padding: 5px;
+    }
+
+    .bottom-menu-card:hover {
+        background-color: #e60000;
+    }
+
 }
 
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 8px;
-}
+@media (max-width: 768px) {
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #ff0000;
-    border-radius: 8px;
-    border: 1px solid white;
-}
+    .bottom-menu {
+        position: fixed !important;
+        bottom: 0 !important;
+        width: 100% !important;
+    }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #e60000;
-    border-radius: 8px;
-    border: 1px solid white;
+    .bottom-menu-card {
+        background-color: #ff0000;
+        border: 1px solid white;
+        padding: 5px;
+    }
 }
