@@ -5645,12 +5645,16 @@ header .btn {
     color: white;
 }
 
+.font-17 {
+    font-size: 17px;
+}
+
 .font-20 {
     font-size: 20px;
 }
 
-.font-17 {
-    font-size: 17px;
+.font-22 {
+    font-size: 22px;
 }
 
 .preventiva {
@@ -5767,7 +5771,7 @@ header .btn {
     margin: 0 auto;
     overflow: hidden;
     width: 1000px;
-    height: 450px;
+    height: 400px;
 }
 
 .single-testimonial {
