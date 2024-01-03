@@ -5871,3 +5871,31 @@ footer {
 .footer-link {
     color: white;
 }
+/*blog section index*/
+.card-blog-index {
+    border: 1px dashed red;
+    border-radius: 10px;
+}
+.blog-section .card-title {
+    color: #22253d;
+    font-weight: bold;
+}
+
+.card-align {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-align > * {
+    /*flex: 1;*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+@media (min-width: 768px) {
+    .card-align {
+        flex-direction: row;
+    }
+}
