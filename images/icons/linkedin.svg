@@ -1,0 +1,19 @@
+<svg height="288" id="SvgjsSvg1038" version="1.1" width="288" xmlns="http://www.w3.org/2000/svg">
+  <defs id="SvgjsDefs1039"></defs>
+  <g id="SvgjsG1040">
+    <svg height="288" viewBox="0 0 24 24" width="288" xmlns="http://www.w3.org/2000/svg">
+      <g class="color000 svgShape" data-name="Layer 2" fill="#ffffff">
+        <g class="color000 svgShape" data-name="linkedin" fill="#ffffff">
+          <circle class="color000 svgShape" cx="5.25" cy="5.25" fill="#ffffff" r="2.25"></circle>
+          <path class="color000 svgShape"
+            d="M15.15 8.4a5.83 5.83 0 0 0-5.85 5.82v5.88a.9.9 0 0 0 .9.9h2.1a.9.9 0 0 0 .9-.9v-5.88a1.94 1.94 0 0 1 2.15-1.93 2 2 0 0 1 1.75 2v5.81a.9.9 0 0 0 .9.9h2.1a.9.9 0 0 0 .9-.9v-5.88a5.83 5.83 0 0 0-5.85-5.82z"
+            fill="#ffffff"></path>
+          <rect class="color000 svgShape" fill="#ffffff" height="11.7" rx=".9" ry=".9" width="4.5"
+            x="3" y="9.3"></rect>
+          <rect class="color000 svgShape" fill="#ffffff" height="24" opacity="0"
+            transform="rotate(180 12 12)" width="24"></rect>
+        </g>
+      </g>
+    </svg>
+  </g>
+</svg>
