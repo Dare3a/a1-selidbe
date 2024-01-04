@@ -5874,10 +5874,6 @@ footer {
     color: white;
 }
 /*blog section index*/
-.card-blog-index {
-    border: 1px dashed red;
-    border-radius: 10px;
-}
 .blog-section .card-title {
     color: #22253d;
     font-weight: bold;
