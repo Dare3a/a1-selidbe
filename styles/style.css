@@ -5784,6 +5784,8 @@ header .btn {
 }
 
 .testim {
+    background-color: #dee0ed;
+    border-radius: 7px;
     width: 25%;
     margin: 0;
     float: left;
