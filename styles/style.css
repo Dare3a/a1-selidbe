@@ -5897,3 +5897,17 @@ footer {
         flex-direction: row;
     }
 }
+.pre-footer {
+    background-color: #2e3252;
+    color: white;
+}
+.pre-footer a {
+    color: white;
+}
+
+.pre-footer a:hover {
+    color: red;
+}
+.pre-footer-list {
+    list-style: none;
+}
