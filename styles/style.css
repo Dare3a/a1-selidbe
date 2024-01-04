@@ -5705,15 +5705,15 @@ header .btn {
     outline: none;
 }
 
-.usluge .card-usluge {
-    background-color: #bbc0c4;
+.usluge-section .card-usluge {
+    background-color: #e4e6e7;
     border-top: 2px solid #22253d;
     border-bottom: 2px solid #22253d;
     /*box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px, rgba(0, 0, 0, 0.22) 0 4px 4px;*/
 }
 
 .card-usluge:hover {
-    background-color: #e4e6e7;
+    background-color: #bbc0c4;
 }
 
 .usluge .card-title {
