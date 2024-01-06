@@ -5632,6 +5632,9 @@ header .btn {
     border-radius: 50%;
 }
 
+.rounded-div:hover {
+    background-color: red;
+}
 .rounded-div-red {
     height: 200px;
     width: 200px;
@@ -5641,6 +5644,9 @@ header .btn {
     border-radius: 50%;
 }
 
+.rounded-div-red:hover {
+    background-color: rgb(34, 37, 61);
+}
 .text-light {
     color: white;
 }
