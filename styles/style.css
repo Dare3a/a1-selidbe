@@ -5917,3 +5917,9 @@ footer {
 .pre-footer-list {
     list-style: none;
 }
+.number {
+    color: white;
+    background-color: red;
+    width: 20px;
+    border-radius: 50%;
+}
