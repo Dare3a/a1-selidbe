@@ -5834,7 +5834,22 @@ header .btn {
     font-size: 18px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1023px) {
+
+    .bottom-menu {
+        position: fixed !important;
+        bottom: 0 !important;
+        width: 100% !important;
+    }
+
+    .bottom-menu-card {
+        background-color: #ff0000;
+        border: 1px solid white;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 1024px) {
     .bottom-menu {
         position: fixed;
         right: 0;
@@ -5856,20 +5871,6 @@ header .btn {
 
 }
 
-@media (max-width: 768px) {
-
-    .bottom-menu {
-        position: fixed !important;
-        bottom: 0 !important;
-        width: 100% !important;
-    }
-
-    .bottom-menu-card {
-        background-color: #ff0000;
-        border: 1px solid white;
-        padding: 5px;
-    }
-}
 footer {
     background-color: #22253d;
 }
