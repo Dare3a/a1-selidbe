@@ -5415,7 +5415,7 @@ header .btn {
     .nav-btn {
         position: fixed;
         height: calc(100vh - 3rem);
-        top: 6rem;
+        top: 5rem;
         left: 0;
         width: 100%;
         background-color: var(--clr-btn);
