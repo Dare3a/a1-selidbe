@@ -5626,26 +5626,26 @@ header .btn {
 .rounded-div {
     height: 200px;
     width: 200px;
-    background-color: rgba(34, 37, 61, 0.7);
+    background-color: rgb(34, 37, 61);
     color: white;
     border: 1px solid white;
     border-radius: 50%;
 }
 
 .rounded-div:hover {
-    background-color: rgba(255, 0, 0, 0.7);
+    background-color: rgb(255, 0, 0);
 }
 .rounded-div-red {
     height: 200px;
     width: 200px;
-    background-color: rgba(255, 0, 0, 0.7);
+    background-color: rgb(255, 0, 0);
     color: white;
     border: 1px solid white;
     border-radius: 50%;
 }
 
 .rounded-div-red:hover {
-    background-color: rgba(34, 37, 61, 0.7);
+    background-color: rgb(34, 37, 61);
 }
 .text-light {
     color: white;
