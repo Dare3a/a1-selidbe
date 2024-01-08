@@ -5196,7 +5196,7 @@ header {
     display: block;
     clear: both;
     box-sizing: border-box;
-    width: 100%;
+    width: 100% !important;
     padding: 0.25rem 1rem;
 }
 
