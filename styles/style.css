@@ -5190,6 +5190,7 @@ header {
     box-sizing: border-box;
     padding: 0.5rem 0;
     border: 1px solid rgba(0, 0, 0, .15);
+    width: max-content !important;
 }
 
 .dropdown-item {
