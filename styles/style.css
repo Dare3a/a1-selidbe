@@ -5640,3 +5640,12 @@ footer {
     text-decoration: underline;
     color: white;
 }
+.text-link {
+    color: #2e3252;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+    color: #2e3252;
+}
