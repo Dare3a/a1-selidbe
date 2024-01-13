@@ -5649,3 +5649,10 @@ footer {
     text-decoration: underline;
     color: #2e3252;
 }
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid red;
+}
