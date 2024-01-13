@@ -5618,9 +5618,9 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
     background-color: #2e3252;
-    border-bottom: 1px solid rgb(192, 192, 192);
+    border-bottom: 2px solid rgb(192, 192, 192);
     border-radius: 0.25rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 5px 5px, rgba(0, 0, 0, 0.22) 0 5px 5px;
+    /*box-shadow: rgba(0, 0, 0, 0.25) 0 5px 5px, rgba(0, 0, 0, 0.22) 0 5px 5px;*/
 }
 
 .lista-linkova {
