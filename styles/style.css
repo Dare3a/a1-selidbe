@@ -5124,6 +5124,13 @@
         /*box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);*/
         z-index: 100;
     }
+
+    .header-div small {
+        font-size: 26px;
+    }
+    .header-div span {
+        font-size: 46px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -5140,6 +5147,12 @@
         z-index: 100;
     }
 
+    .header-div small {
+        font-size: 20px;
+    }
+    .header-div span {
+        font-size: 30px;
+    }
 }
 
 /*NAV*/
@@ -5311,12 +5324,20 @@ header {
     font-size: 17px;
 }
 
+.font-18 {
+    font-size: 18px;
+}
+
 .font-20 {
     font-size: 20px;
 }
 
 .font-22 {
     font-size: 22px;
+}
+
+.font-24 {
+    font-size: 24px;
 }
 
 .preventiva {
@@ -5658,4 +5679,17 @@ footer {
 }
 .text-sekcija ul {
     padding-left: 20px;
+}
+/*.header-div {*/
+/*    position: relative;*/
+/*}*/
+
+.header-pozadina {
+    /*position: absolute;*/
+    /*top: 40%;*/
+    /*transform: translateY(-40%);*/
+    /*text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;*/
+    color: #2e3252;
+    /*width: 100%;*/
+    /*height: auto;*/
 }
