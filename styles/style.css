@@ -5147,6 +5147,14 @@
         z-index: 100;
     }
 
+    .header-div {
+        /*position: relative;*/
+        background-image: url("../images/a1-selidbe-header_mob.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
     .header-div small {
         font-size: 20px;
     }
@@ -5680,16 +5688,20 @@ footer {
 .text-sekcija ul {
     padding-left: 20px;
 }
-/*.header-div {*/
-/*    position: relative;*/
-/*}*/
+.header-div {
+    /*position: relative;*/
+    background-image: url("../images/a1-selidbe-header.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
 .header-pozadina {
     /*position: absolute;*/
     /*top: 40%;*/
     /*transform: translateY(-40%);*/
-    /*text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;*/
-    color: #2e3252;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    color: white;
     /*width: 100%;*/
     /*height: auto;*/
 }
