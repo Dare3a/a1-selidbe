@@ -5685,9 +5685,10 @@ footer {
     border-right: 15px solid transparent;
     border-top: 15px solid red;
 }
-.text-sekcija ul {
+.text-sekcija ul, .text-sekcija ol  {
     padding-left: 20px;
 }
+
 .header-div {
     /*position: relative;*/
     background-image: url("../images/a1-selidbe-header.webp");
