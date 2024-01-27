@@ -39,8 +39,9 @@ if (hamburger) {
 }
 
 // Otvaranje i zatvaranje podmenija u navigaciji za mobilni
-const padajuciMeni = document.querySelectorAll('#uslugeStrelica, #selidbeBgStrelica, #prevozStrelica, #onamaStrelica');
-const padajuciMeniLista = document.querySelectorAll('#uslugeMenu, #selidbeBgMenu, #prevozMenu, #onamaMenu');
+const padajuciMeni = document.querySelectorAll('#uslugeStrelica, #selidbeBgStrelica, #prevozStrelica,' +
+    ' #onamaStrelica, #ceneSelidbe');
+const padajuciMeniLista = document.querySelectorAll('#uslugeMenu, #selidbeBgMenu, #prevozMenu, #onamaMenu, #ceneSelidbeMenu');
 if (padajuciMeni) {
     padajuciMeni.forEach(item => {
         item.addEventListener('click', () => {
