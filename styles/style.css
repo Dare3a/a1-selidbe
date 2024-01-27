@@ -5732,7 +5732,7 @@ tr:nth-child(even) {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #171a1c;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #c8ccd0;
@@ -5744,7 +5744,7 @@ tr:nth-child(even) {
 }
 
 .kontakt input, .kontakt textarea {
-    background-color: #d8f2f4 !important;
+    background-color: #ced1e3 !important;
     /*border-radius: 0 !important;*/
     /*box-shadow: 8px 8px 6px 0 rgb(0 0 0 0.50);*/
 }
@@ -5775,4 +5775,14 @@ tr:nth-child(even) {
     /*border-color: #009199 !important;*/
     -webkit-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.3);
     box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+.toast:not(.show) {
+    display: none;
+}
+.fade:not(.show) {
+    opacity: 0;
+}
+
+.fade {
+    transition: opacity .15s linear;
 }
