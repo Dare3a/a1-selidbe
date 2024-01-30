@@ -5786,3 +5786,9 @@ tr:nth-child(even) {
 .fade {
     transition: opacity .15s linear;
 }
+.citat {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: lightgray;
+}
