@@ -5890,16 +5890,18 @@ tr:nth-child(even) {
         margin: 20% auto;
     }
 }
-
+.card-proizvodi {
+    background-color: #2e3252;
+}
 .card-pozadina p {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .card-pozadina a {
     font-weight: 600;
     font-size: 20px;
-    color: #2e3252;
+    color: white;
     text-decoration: none;
 }
 .card-proizvodi {
