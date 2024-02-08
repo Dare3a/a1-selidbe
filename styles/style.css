@@ -5906,7 +5906,10 @@ tr:nth-child(even) {
     border: 1px solid #2e3252;
     padding: 0;
 }
-
+.card-proizvodi-blank {
+    border: 1px solid white;
+    padding: 0;
+}
 .card-align {
     display: flex;
     flex-direction: column;
