@@ -5891,3 +5891,9 @@ tr:nth-child(even) {
     }
 }
 
+.card-pozadina a {
+    font-weight: 500;
+    font-size: 20px;
+    color: #383e42;
+    text-decoration: none;
+}
