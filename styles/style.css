@@ -5805,7 +5805,8 @@ tr:nth-child(even) {
 }
 .gallery-item {
     flex-basis: 32.7%;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
+    padding: 12px;
     opacity: .85;
     cursor: pointer;
 }
