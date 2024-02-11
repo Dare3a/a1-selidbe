@@ -5191,6 +5191,9 @@ header {
     text-decoration: none;
     color: white !important;
 }
+.aktivno > a {
+    color: black !important;
+}
 .menu ul li ul {
     display: none;
 }
