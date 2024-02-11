@@ -5559,11 +5559,17 @@ header {
 footer {
     background-color: #22253d;
 }
+.social-network {
+    background-color: #2e3252;
+}
 .social-network a {
     text-decoration: none;
 }
 .footer-link {
     color: white;
+}
+.footer-copyright {
+    background-color: #1c1e31;
 }
 /*blog section index*/
 .blog-section .card-title {
@@ -5952,3 +5958,6 @@ tr:nth-child(even) {
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+.footer-lista li {
+    list-style: none;
+}
