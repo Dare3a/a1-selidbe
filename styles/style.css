@@ -5679,13 +5679,13 @@ footer {
     color: white;
 }
 .text-link {
-    color: #2e3252;
+    color: #8300ff;
     text-decoration: none;
 }
 
 .text-link:hover {
-    text-decoration: underline;
-    color: #2e3252;
+    text-decoration: none;
+    color: #b500ff;
 }
 .triangle-down {
     width: 0;
