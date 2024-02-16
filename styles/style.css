@@ -5714,13 +5714,13 @@ footer {
     color: white;
 }
 .text-link {
-    color: #8300ff;
+    color: #cc0000;
     text-decoration: none;
 }
 
 .text-link:hover {
     text-decoration: none;
-    color: #b500ff;
+    color: #ff1a1a;
 }
 .triangle-down {
     width: 0;
