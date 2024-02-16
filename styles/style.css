@@ -5107,6 +5107,24 @@
     box-sizing: border-box;
 }
 
+/*// Small devices (landscape phones, 576px and up)*/
+@media (max-width: 575px) {
+
+    .hero-cap {
+        font-size: 24px;
+    }
+
+}
+
+@media (min-width: 576px) {
+
+    .hero-cap {
+        font-size: 26px;
+    }
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
     .menu ul li:hover ul {
@@ -5160,6 +5178,27 @@
     }
     .header-div span {
         font-size: 30px;
+    }
+}
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    .hero-cap {
+        font-size: 26px;
+    }
+
+}
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .hero-cap {
+        font-size: 30px;
+    }
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    .hero-cap {
+        font-size: 32px;
     }
 }
 
