@@ -5394,10 +5394,6 @@ header {
     background-color: rgb(34, 37, 61);
 }
 
-.preventiva p {
-    font-size: 17px;
-}
-
 .why p {
     font-size: 17px;
 }
@@ -6002,4 +5998,10 @@ tr:nth-child(even) {
 .pagination a:hover:not(.active) {background-color: #ddd;}
 .footer-lista li {
     list-style: none;
+}
+p {
+    font-size: 18px;
+}
+ul, ol {
+    font-size: 18px;
 }
