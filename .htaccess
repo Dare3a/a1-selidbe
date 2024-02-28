@@ -62,6 +62,9 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{THE_REQUEST} /index\.html? [NC]
 RewriteRule ^(.*/)?index\.html?$ /$1 [R=301,L]
 
+#Redirekcije za php stranice koje se prikazuju u SERP
+RedirectPermanent https://www.a1selidbe.rs/selidbe-poslovnih-prostora.php https://a1selidbe.rs/selidbe-poslovnih-prostora.html
+
 
 Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 
