@@ -75,6 +75,7 @@ Redirect 301 /selidba-specijalnog-tereta.php https://a1selidbe.rs/selidba-specij
 Redirect 301 /selidbe-akcije.php https://a1selidbe.rs/selidbe-akcije.html
 Redirect 301 /selidbe-cene-beograd-upitnik-kalkulator.php https://a1selidbe.rs/selidbe-cene-beograd-upitnik-kalkulator.html
 Redirect 301 /vodic-za-selidbe-starijih-gradjana-penzionera.php https://a1selidbe.rs/vodic-za-selidbe-starijih-gradjana-penzionera.html
+Redirect 301 /selidbe-zimi-zimske-selidbe.php https://a1selidbe.rs/selidbe-zimi-zimske-selidbe.html
 
 
 Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
