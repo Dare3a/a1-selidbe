@@ -65,6 +65,7 @@ RewriteRule ^(.*/)?index\.html?$ /$1 [R=301,L]
 #Redirekcije za php stranice koje se prikazuju u SERP
 Redirect 301 /selidbe-poslovnih-prostora.php https://a1selidbe.rs/selidbe-poslovnih-prostora.html
 Redirect 301 /selidbe-cene-beograd.php https://a1selidbe.rs/selidbe-cene-beograd.html
+Redirect 301 /usluge-kombi-i-kamionski-prevoz.php https://a1selidbe.rs/usluge-kombi-i-kamionski-prevoz.html
 
 
 Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
