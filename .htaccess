@@ -69,6 +69,7 @@ Redirect 301 /usluge-kombi-i-kamionski-prevoz.php https://a1selidbe.rs/usluge-ko
 Redirect 301 /usluge-prodaja-kartonskih-kutija-selidbe.php https://a1selidbe.rs/usluge-prodaja-kartonskih-kutija-selidbe.html
 Redirect 301 /usluge-odvoz-na-deponiju.php https://a1selidbe.rs/usluge-odvoz-na-deponiju.html
 Redirect 301 /saveti-za-selidbu-antikviteta-blog.php https://a1selidbe.rs/saveti-za-selidbu-antikviteta-blog.html
+Redirect 301 /pakovanje-stvari.php https://a1selidbe.rs/pakovanje-stvari.html
 
 
 Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
