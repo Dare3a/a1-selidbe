@@ -63,21 +63,29 @@ RewriteCond %{THE_REQUEST} /index\.html? [NC]
 RewriteRule ^(.*/)?index\.html?$ /$1 [R=301,L]
 
 #Redirekcije za php stranice koje se prikazuju u SERP
-Redirect 301 /selidbe-poslovnih-prostora.php https://a1selidbe.rs/selidbe-poslovnih-prostora.html
-Redirect 301 /selidbe-cene-beograd.php https://a1selidbe.rs/selidbe-cene-beograd.html
-Redirect 301 /usluge-kombi-i-kamionski-prevoz.php https://a1selidbe.rs/usluge-kombi-i-kamionski-prevoz.html
-Redirect 301 /usluge-prodaja-kartonskih-kutija-selidbe.php https://a1selidbe.rs/usluge-prodaja-kartonskih-kutija-selidbe.html
-Redirect 301 /usluge-odvoz-na-deponiju.php https://a1selidbe.rs/usluge-odvoz-na-deponiju.html
-Redirect 301 /saveti-za-selidbu-antikviteta-blog.php https://a1selidbe.rs/saveti-za-selidbu-antikviteta-blog.html
 Redirect 301 /pakovanje-stvari.php https://a1selidbe.rs/pakovanje-stvari.html
 Redirect 301 /ponuda-za-selidbu-selidbe-cena.php https://a1selidbe.rs/ponuda-za-selidbu-selidbe-cena.html
+Redirect 301 /saveti-za-selidbu-antikviteta-blog.php https://a1selidbe.rs/saveti-za-selidbu-antikviteta-blog.html
+Redirect 301 /saveti-za-nosenje-namestaja-blog.php https://a1selidbe.rs/saveti-za-nosenje-namestaja-blog.html
 Redirect 301 /selidba-specijalnog-tereta.php https://a1selidbe.rs/selidba-specijalnog-tereta.html
 Redirect 301 /selidbe-akcije.php https://a1selidbe.rs/selidbe-akcije.html
+Redirect 301 /selidbe-beograd.php https://a1selidbe.rs/selidbe-beograd.html
+Redirect 301 /selidbe-cene.php https://a1selidbe.rs/selidbe-cene.html
+Redirect 301 /selidbe-cene-beograd.php https://a1selidbe.rs/selidbe-cene-beograd.html
 Redirect 301 /selidbe-cene-beograd-upitnik-kalkulator.php https://a1selidbe.rs/selidbe-cene-beograd-upitnik-kalkulator.html
-Redirect 301 /vodic-za-selidbe-starijih-gradjana-penzionera.php https://a1selidbe.rs/vodic-za-selidbe-starijih-gradjana-penzionera.html
+Redirect 301 /selidbe-galerija-beograd-srbija.php https://a1selidbe.rs/selidbe-galerija-beograd-srbija.html
+Redirect 301 /selidbe-poslovnih-prostora.php https://a1selidbe.rs/selidbe-poslovnih-prostora.html
+Redirect 301 /selidbe-preporuke-beograd-srbija.php https://a1selidbe.rs/selidbe-preporuke-beograd-srbija.html
 Redirect 301 /selidbe-zimi-zimske-selidbe.php https://a1selidbe.rs/selidbe-zimi-zimske-selidbe.html
 Redirect 301 /selidbe-tokom-letnjih-meseci.php https://a1selidbe.rs/selidbe-tokom-letnjih-meseci.html
 Redirect 301 /selidbe-kontakt-srbija-beograd.php https://a1selidbe.rs/selidbe-kontakt-srbija-beograd.html
+Redirect 301 /selidbe-srbija.php https://a1selidbe.rs/selidbe-srbija.html
+Redirect 301 /usluge-kombi-i-kamionski-prevoz.php https://a1selidbe.rs/usluge-kombi-i-kamionski-prevoz.html
+Redirect 301 /usluge-prodaja-kartonskih-kutija-selidbe.php https://a1selidbe.rs/usluge-prodaja-kartonskih-kutija-selidbe.html
+Redirect 301 /usluge-odvoz-na-deponiju.php https://a1selidbe.rs/usluge-odvoz-na-deponiju.html
+Redirect 301 /usluge-selidbe-antikviteta.php https://a1selidbe.rs/usluge-selidbe-antikviteta.html
+Redirect 301 /usluge-selidbe-beograd-srbija.php https://a1selidbe.rs/usluge-selidbe-beograd-srbija.html
+Redirect 301 /vodic-za-selidbe-starijih-gradjana-penzionera.php https://a1selidbe.rs/vodic-za-selidbe-starijih-gradjana-penzionera.html
 
 
 Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
