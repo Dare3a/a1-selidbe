@@ -5722,6 +5722,10 @@ footer {
     text-decoration: none;
     color: #ff1a1a;
 }
+.index-blog-link {
+    text-decoration: none;
+    color: #2e3252;
+}
 .triangle-down {
     width: 0;
     height: 0;
