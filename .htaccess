@@ -65,8 +65,9 @@ RewriteRule ^(.*/)?index\.html?$ /$1 [R=301,L]
 
 RewriteEngine On
 
-# Preusmeravanje svih URL-ova koji sadrže wp-content na 404
+# Preusmerite sve što ide ka wp-content osim slika, CSS, JS
 RewriteCond %{REQUEST_URI} ^/wp-content/ [NC]
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|otf|ico)$ [NC]
 RewriteRule ^.*$ /404.html [L,R=404]
 
 #Redirekcije za php stranice koje se prikazuju u SERP
