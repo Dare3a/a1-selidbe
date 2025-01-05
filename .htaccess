@@ -64,7 +64,7 @@ RewriteRule ^(.*/)?index\.html?$ /$1 [R=301,L]
 
 #Redirekcije za slike iz foldera wp-content koje imaju i svoj url
 RewriteEngine On
-RewriteCond %{REQUEST_URI} ^/wp-content/ [NC]
+RewriteCond %{REQUEST_URI} ^https://a1selidbe.rs/wp-content/ [NC]
 RewriteRule ^(.*)$ /404 [L,R=404]
 
 #Redirekcije za php stranice koje se prikazuju u SERP
