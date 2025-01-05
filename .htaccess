@@ -62,16 +62,11 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{THE_REQUEST} /index\.html? [NC]
 RewriteRule ^(.*/)?index\.html?$ /$1 [R=301,L]
 
+
+# Preusmeravanje svih URL-ova sa "wp-content" na 404
 RewriteEngine On
-
-# Preusmeravanje za sve URL-ove unutar wp-content
 RewriteCond %{REQUEST_URI} ^/wp-content/ [NC]
-
-# Dozvoljava validne fajlove sa određenim ekstenzijama (CSS, JS, slike, fontovi)
-RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|woff|woff2|ttf|svg|eot|ico|webp)$ [NC]
-
-# Preusmeravanje ostalih zahteva na 404
-RewriteRule ^(.*)$ /404 [L,R=404]
+RewriteRule ^.*$ - [R=404,L]
 
 #Redirekcije za php stranice koje se prikazuju u SERP
 Redirect 301 /5-faktora-o-kojima-treba-misliti-tokom-selidbe-klavira.php https://a1selidbe.rs/5-faktora-o-kojima-treba-misliti-tokom-selidbe-klavira.html
