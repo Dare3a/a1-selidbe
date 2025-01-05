@@ -63,12 +63,6 @@ RewriteCond %{THE_REQUEST} /index\.html? [NC]
 RewriteRule ^(.*/)?index\.html?$ /$1 [R=301,L]
 
 
-RewriteEngine On
-
-# Preusmerite sve URL-ove sa wp-content na 404.html
-RewriteCond %{REQUEST_URI} ^/wp-content/ [NC]
-RewriteRule ^.*$ /404.html [L,R=404]
-
 #Redirekcije za php stranice koje se prikazuju u SERP
 Redirect 301 /5-faktora-o-kojima-treba-misliti-tokom-selidbe-klavira.php https://a1selidbe.rs/5-faktora-o-kojima-treba-misliti-tokom-selidbe-klavira.html
 Redirect 301 /alati-koje-traba-da-imate-kada-se-selite.php https://a1selidbe.rs/alati-koje-traba-da-imate-kada-se-selite.html
