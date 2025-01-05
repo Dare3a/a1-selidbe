@@ -62,10 +62,15 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{THE_REQUEST} /index\.html? [NC]
 RewriteRule ^(.*/)?index\.html?$ /$1 [R=301,L]
 
-#Redirekcije za slike iz foldera wp-content koje imaju i svoj url
 RewriteEngine On
-RewriteCond %{REQUEST_URI} ^/wp-content/(plugins|themes|uploads)/.*$ [NC]
-RewriteCond %{REQUEST_URI} !^/wp-content/(.*)\.(css|js|png|jpg|jpeg|gif|woff|woff2|ttf|svg|eot|ico|webp)$ [NC]
+
+# Preusmeravanje za sve URL-ove unutar wp-content
+RewriteCond %{REQUEST_URI} ^/wp-content/ [NC]
+
+# Dozvoljava validne fajlove sa određenim ekstenzijama (CSS, JS, slike, fontovi)
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|woff|woff2|ttf|svg|eot|ico|webp)$ [NC]
+
+# Preusmeravanje ostalih zahteva na 404
 RewriteRule ^(.*)$ /404 [L,R=404]
 
 #Redirekcije za php stranice koje se prikazuju u SERP
