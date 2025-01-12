@@ -5366,6 +5366,12 @@ header {
 .rounded-div-red:hover {
     background-color: rgb(34, 37, 61);
 }
+
+.rounded-div a {
+    color: white;
+    text-decoration: none;
+}
+
 .text-light {
     color: white;
 }
