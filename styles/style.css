@@ -6015,3 +6015,17 @@ p {
 ul, ol {
     font-size: 18px;
 }
+
+.faq dt {
+    font-size: 19px;
+}
+.faq dd {
+    font-size: 18px;
+}
+.faq {
+    background-color: #e60000;
+    color: white;
+}
+.faq b {
+    color: black !important;
+}
