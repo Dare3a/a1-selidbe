@@ -6018,10 +6018,10 @@ ul, ol {
 
 .faq-section {
     background-color: #fff5f5;
-    padding: 60px 20px;
-    border: 2px solid #ff0000;
-    border-radius: 12px;
-    max-width: 900px;
+    /*padding: 60px 20px;*/
+    /*border: 2px solid #ff0000;*/
+    /*border-radius: 12px;*/
+    /*max-width: 900px;*/
     margin: 0 auto;
 }
 
@@ -6030,6 +6030,12 @@ ul, ol {
     text-align: center;
     font-weight: 600;
     margin-bottom: 40px;
+}
+
+.faq-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .faq-item {
@@ -6047,7 +6053,7 @@ ul, ol {
     display: block;
     background-color: #ff0000;
     color: #fff;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 500;
     padding: 15px 20px;
     cursor: pointer;
@@ -6062,7 +6068,7 @@ ul, ol {
 .faq-answer {
     background-color: #fff;
     color: #333;
-    font-size: 17px;
+    font-size: 18px;
     padding: 15px 20px;
     display: none;
     border-radius: 0 0 8px 8px;
