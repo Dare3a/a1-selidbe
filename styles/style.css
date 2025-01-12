@@ -6016,16 +6016,58 @@ ul, ol {
     font-size: 18px;
 }
 
-.faq dt {
-    font-size: 19px;
+.faq-section {
+    background-color: #fff5f5;
+    padding: 60px 20px;
+    border: 2px solid #ff0000;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 0 auto;
 }
-.faq dd {
+
+.faq-title {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    border: 1px solid #ffcccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.faq-toggle {
+    display: none; /* Skriva checkbox */
+}
+
+.faq-question {
+    display: block;
+    background-color: #ff0000;
+    color: #fff;
     font-size: 18px;
+    font-weight: 500;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px 8px 0 0;
 }
-.faq {
-    background-color: #e60000;
-    color: white;
+
+.faq-question:hover {
+    background-color: #cc0000;
 }
-.faq b {
-    color: black !important;
+
+.faq-answer {
+    background-color: #fff;
+    color: #333;
+    font-size: 17px;
+    padding: 15px 20px;
+    display: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.faq-toggle:checked + .faq-question + .faq-answer {
+    display: block;
 }
