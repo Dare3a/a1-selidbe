@@ -6089,13 +6089,11 @@ ul, ol {
     margin: 0 auto;
 }
 
-/*.faq-title {*/
-/*    font-size: 32px;*/
-/*    text-align: center;*/
-/*    color: #ff0000;*/
-/*    font-weight: 600;*/
-/*    margin-bottom: 40px;*/
-/*}*/
+.cpp-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 .cpp-items {
     display: flex;
