@@ -133,6 +133,8 @@ Redirect 301 /faq-items/da-li-vasi-radnici-iznose-stvari-na-visoke-spratove-u-sl
 Redirect 301 /faq-items/da-li-demontirate-i-ponovo-montirate-namestaj.php https://a1selidbe.rs/najcesca-pitanja/da-li-demontirate-i-ponovo-montirate-namestaj.html
 Redirect 301 /faq-items/da-li-pakujete-stvari-u-kutije-i-stitite-stvari.php https://a1selidbe.rs/najcesca-pitanja/da-li-pakujete-stvari-u-kutije-i-stitite-stvari.html
 Redirect 301 /faq-items/da-li-je-cena-usluge-skuplja-vikendom.php https://a1selidbe.rs/najcesca-pitanja/da-li-je-cena-usluge-skuplja-vikendom.html
+Redirect 301 /faq-items/kako-se-odredjuje-cena-selidbe.php https://a1selidbe.rs/najcesca-pitanja/kako-se-odredjuje-cena-selidbe.html
+
 
 
 Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
