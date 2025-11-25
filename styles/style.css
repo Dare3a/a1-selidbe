@@ -5221,8 +5221,8 @@ header {
 
 .nav > li {
     cursor: pointer;
-    padding: 1em;
-    font-size: 18px;
+    padding: 0.7em;
+    font-size: 19px;
     position: relative;
 }
 
@@ -6010,7 +6010,7 @@ tr:nth-child(even) {
     list-style: none;
 }
 p {
-    font-size: 18px;
+    font-size: 19px;
 }
 ul, ol {
     font-size: 18px;
