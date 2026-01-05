@@ -5245,6 +5245,10 @@ header {
     cursor: pointer;
 }
 
+.hamburgerHam {
+    font-size: 28px;
+}
+
 .dropdown-menu {
     background-color: red !important;
     position: relative;
