@@ -780,7 +780,7 @@
     {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "@id": "https://a1selidbe.rs/#site",
+        "@id": "https://a1selidbe.rs/#organization",
         "url": "https://a1selidbe.rs/",
         "name": "Selidbe Beograd - A1",
         "description": "A1 selidbe Beograd vam nudi povoljne cena preseljenja veoma brzo i sigurno. Zakažite danas vašu selidbu na telefon 011/2512328",
@@ -809,13 +809,14 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "@id": "https://a1selidbe.rs/#a1selidbe",
-        "isPartOf": { "@id": "https://a1selidbe.rs/#site" },
+        "parentOrganization": { "@id": "https://a1selidbe.rs/#organization" },
         "name": "Selidbe Beograd - A1",
         "description": "A1 selidbe Beograd vam nudi kvalitetne usluge i povoljne cena preseljenja brzo i sigurno. Zakažite danas vašu selidbu na telefon 011/2512328",
         "image": "https://a1selidbe.rs/images/a1-selidbe-hero.jpg",
         "logo": "https://a1selidbe.rs/images/logo/logo-75.png",
         "url": "https://a1selidbe.rs/",
         "telephone": "+381112512328",
+        "priceRange": "$$",
         "sameAs": [
             "https://www.instagram.com/a1_selidbe/?igsh=ZzU3NXFtZW8wZmlw"
         ],
@@ -1110,7 +1111,22 @@
             "@id": "https://a1selidbe.rs/#a1selidbe"
         },
 
+        "providerMobility": "dynamic",
+
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Beograd",
+                    "addressCountry": "RS"
+                }
+            }
+        },
+
         "areaServed": [
+            { "@type": "City", "name": "Beograd" },
             { "@type": "AdministrativeArea", "name": "Rakovica, Beograd" },
             { "@type": "Place", "name": "Kanarevo brdo" },
             { "@type": "Place", "name": "Petlovo brdo" },
