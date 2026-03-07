@@ -6136,6 +6136,48 @@ ul, ol {
     color: white;
 }
 
+.opstine-beograd{
+    max-width:1200px;
+    margin:60px auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+.opstine-beograd h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.opstine-opis{
+    max-width:700px;
+    margin:0 auto 40px auto;
+    color:#555;
+    line-height:1.6;
+}
+
+.opstine-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.opstina-card{
+    display:block;
+    padding:18px 20px;
+    background:#f7f7f7;
+    border-radius:8px;
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+    transition:all 0.25s ease;
+    border:1px solid #eee;
+}
+
+.opstina-card:hover{
+    background:#2e3252;
+    color:#fff;
+    transform:translateY(-3px);
+}
 /*.faq-answer {*/
 /*    background-color: #fff;*/
 /*    color: #333;*/
