@@ -1,137 +1,302 @@
-## EXPIRES CACHING ##
-
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/gif "access plus 1 year"
-  ExpiresByType image/svg+xml "access plus 1 year"
-  ExpiresByType image/x-icon "access plus 1 year"
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
-  ExpiresByType application/pdf "access plus 1 month"
-  ExpiresDefault "access plus 1 month"
-</IfModule>
-
-## EXPIRES CACHING ##
+# ==============================================================================
+# A1 SELIDBE - .HTACCESS
+# ==============================================================================
 
 
-
-# 1 Month for most static assets
-
-<filesMatch "\.(css|js|jpg|jpeg|png|gif|webp|svg|ico)$">
-  Header set Vary "Accept-Encoding"
-  Header set Cache-Control "public, max-age=31536000, immutable"
-</filesMatch>
-
-
-
-<FilesMatch "\.(html?|txt|css|js|php|pl)$">
-
-    SetOutputFilter DEFLATE
-
- </FilesMatch>
-
-
-ErrorDocument 404 /404.html
+# ==============================================================================
+# 1. REWRITE ENGINE
+# ==============================================================================
 
 RewriteEngine On
-RewriteCond %{HTTP_HOST} www.a1selidbe.rs
-RewriteRule ^(.*) https://a1selidbe.rs/$1 [L,R=301]
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-RewriteCond %{THE_REQUEST} /index\.html? [NC]
-RewriteRule ^(.*/)?index\.html?$ /$1 [R=301,L]
 
 
-#Redirekcije za php stranice koje se prikazuju u SERP
+# ==============================================================================
+# 2. CANONICAL REDIRECTS
+#    HTTPS + non-WWW
+# ==============================================================================
+
+# WWW -> HTTPS non-WWW
+RewriteCond %{HTTP_HOST} ^www\.a1selidbe\.rs$ [NC]
+RewriteRule ^ https://a1selidbe.rs%{REQUEST_URI} [R=301,L,NE]
+
+# HTTP -> HTTPS
+# X-Forwarded-Proto uslov sprečava nepotrebne redirekcije
+# ukoliko server/proxy već prosleđuje HTTPS zahtev.
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !^https$ [NC]
+RewriteRule ^ https://a1selidbe.rs%{REQUEST_URI} [R=301,L,NE]
+
+
+# ==============================================================================
+# 3. INDEX REDIRECT
+#    /index.html -> /
+# ==============================================================================
+
+RewriteCond %{THE_REQUEST} \s/+index\.html?[\s?] [NC]
+RewriteRule ^(?:index\.html?)$ https://a1selidbe.rs/ [R=301,L]
+
+
+# ==============================================================================
+# 4. STARI PHP URL-OVI -> POSTOJEĆI HTML URL-OVI
+# ==============================================================================
+
 Redirect 301 /5-faktora-o-kojima-treba-misliti-tokom-selidbe-klavira.php https://a1selidbe.rs/5-faktora-o-kojima-treba-misliti-tokom-selidbe-klavira.html
+
 Redirect 301 /alati-koje-traba-da-imate-kada-se-selite.php https://a1selidbe.rs/alati-koje-traba-da-imate-kada-se-selite.html
+
 Redirect 301 /bezbedno-slaganje-stvari-u-kamionu-blog.php https://a1selidbe.rs/bezbedno-slaganje-stvari-u-kamionu-blog.html
-Redirect 301 /dobro-je-znati.php https://a1selidbe.rs//dobro-je-znati.html
+
+Redirect 301 /dobro-je-znati.php https://a1selidbe.rs/dobro-je-znati.html
+
 Redirect 301 /dostava-namestaja-ikea.php https://a1selidbe.rs/dostava-namestaja-ikea.html
+
 Redirect 301 /kako-izabrati-pouzdanu-agenciju-za-selidbe-u-beogradu.php https://a1selidbe.rs/kako-izabrati-pouzdanu-agenciju-za-selidbe-u-beogradu.html
+
 Redirect 301 /kako-olaksati-selidbu-deci.php https://a1selidbe.rs/kako-olaksati-selidbu-deci.html
+
 Redirect 301 /kako-se-nositi-sa-snegom-na-dan-selidbe.php https://a1selidbe.rs/kako-se-nositi-sa-snegom-na-dan-selidbe.html
+
 Redirect 301 /kako-smanjiti-stres-u-toku-selidbe.php https://a1selidbe.rs/kako-smanjiti-stres-u-toku-selidbe.html
+
 Redirect 301 /kako-spakovati-teske-stvari-za-selidbu.php https://a1selidbe.rs/kako-spakovati-teske-stvari-za-selidbu.html
+
 Redirect 301 /kljucni-saveti-za-pakovanje-i-premestanje-delikatnog-namestaja.php https://a1selidbe.rs/kljucni-saveti-za-pakovanje-i-premestanje-delikatnog-namestaja.html
+
 Redirect 301 /kombi-prevoz-beograd.php https://a1selidbe.rs/kombi-prevoz-beograd.html
+
 Redirect 301 /kombi-prevoz-beograd https://a1selidbe.rs/kombi-prevoz-beograd.html
+
 Redirect 301 /kombi-selidbe-beograd.php https://a1selidbe.rs/kombi-selidbe-beograd.html
+
 Redirect 301 /kombi-selidbe-beograd-2.php https://a1selidbe.rs/kombi-selidbe-beograd-2.html
+
 Redirect 301 /kombi-selidbe-beograd-efikasno-i-brzo-preseljenje-uz-pouzdanu-uslugu.php https://a1selidbe.rs/kombi-selidbe-beograd-efikasno-i-brzo-preseljenje-uz-pouzdanu-uslugu.html
+
 Redirect 301 /pakovanje-stvari.php https://a1selidbe.rs/pakovanje-stvari.html
+
 Redirect 301 /pakovanje-stvari https://a1selidbe.rs/pakovanje-stvari.html
+
 Redirect 301 /ponuda-za-selidbu-selidbe-cena.php https://a1selidbe.rs/ponuda-za-selidbu-selidbe-cena.html
+
 Redirect 301 /priprema-selidbe-blog.php https://a1selidbe.rs/priprema-selidbe-blog.html
+
 Redirect 301 /razlike-izmedju-selidbe-stana-i-selidbe-kancelarija-i-firmi.php https://a1selidbe.rs/razlike-izmedju-selidbe-stana-i-selidbe-kancelarija-i-firmi.html
+
 Redirect 301 /samostalna-selidba-ili-iznajmiti-profesionalce.php https://a1selidbe.rs/samostalna-selidba-ili-iznajmiti-profesionalce.html
+
 Redirect 301 /saveti-za-bezbednu-selidbu-vaseg-kompjutera.php https://a1selidbe.rs/saveti-za-bezbednu-selidbu-vaseg-kompjutera.html
+
 Redirect 301 /saveti-za-nosenje-namestaja-blog.php https://a1selidbe.rs/saveti-za-nosenje-namestaja-blog.html
+
 Redirect 301 /saveti-za-selidbu-antikviteta-blog.php https://a1selidbe.rs/saveti-za-selidbu-antikviteta-blog.html
+
 Redirect 301 /saveti-za-selidbu-blog.php https://a1selidbe.rs/saveti-za-selidbu-blog.html
+
 Redirect 301 /selidba-kucnih-biljaka.php https://a1selidbe.rs/selidba-kucnih-biljaka.html
+
 Redirect 301 /selidba-ljubimaca-blog.php https://a1selidbe.rs/selidba-ljubimaca-blog.html
+
 Redirect 301 /selidba-specijalnog-tereta.php https://a1selidbe.rs/selidba-specijalnog-tereta.html
+
 Redirect 301 /selidba-u-sopstvenoj-reziji-blog.php https://a1selidbe.rs/selidba-u-sopstvenoj-reziji-blog.html
+
 Redirect 301 /selidbe-akcije.php https://a1selidbe.rs/selidbe-akcije.html
+
 Redirect 301 /selidbe-beograd.php https://a1selidbe.rs/selidbe-beograd.html
+
 Redirect 301 /selidbe-beograd-cena.php https://a1selidbe.rs/selidbe-beograd-cena.html
+
 Redirect 301 /selidbe-cene-beograd.php https://a1selidbe.rs/selidbe-cene-beograd.html
+
 Redirect 301 /selidbe-cene-beograd-upitnik-kalkulator.php https://a1selidbe.rs/selidbe-cene-beograd-upitnik-kalkulator.html
+
 Redirect 301 /selidbe-galerija-beograd-srbija.php https://a1selidbe.rs/selidbe-galerija-beograd-srbija.html
+
 Redirect 301 /selidbe-inostranstvo.php https://a1selidbe.rs/selidbe-inostranstvo.html
+
 Redirect 301 /selidbe-klavira.php https://a1selidbe.rs/selidbe-klavira.html
+
 Redirect 301 /selidbe-kontakt-srbija-beograd.php https://a1selidbe.rs/selidbe-kontakt-srbija-beograd.html
+
 Redirect 301 /selidbe-magacin.php https://a1selidbe.rs/selidbe-magacin.html
+
 Redirect 301 /selidbe-novi-beograd.php https://a1selidbe.rs/selidbe-novi-beograd.html
+
 Redirect 301 /selidbe-palilula.php https://a1selidbe.rs/selidbe-palilula.html
+
 Redirect 301 /selidbe-poslovnih-prostora.php https://a1selidbe.rs/selidbe-poslovnih-prostora.html
+
 Redirect 301 /selidbe-preporuke-beograd-srbija.php https://a1selidbe.rs/selidbe-preporuke-beograd-srbija.html
+
 Redirect 301 /selidbe-profesionalni-radnici.php https://a1selidbe.rs/selidbe-profesionalni-radnici.html
+
 Redirect 301 /selidbe-srbija.php https://a1selidbe.rs/selidbe-srbija.html
+
 Redirect 301 /selidbe-tokom-letnjih-meseci.php https://a1selidbe.rs/selidbe-tokom-letnjih-meseci.html
+
 Redirect 301 /selidbe-vozdovac.php https://a1selidbe.rs/selidbe-vozdovac.html
+
 Redirect 301 /selidbe-vracar.php https://a1selidbe.rs/selidbe-vracar.html
+
 Redirect 301 /selidbe-zemun.php https://a1selidbe.rs/selidbe-zemun.html
+
 Redirect 301 /selidbe-zemun https://a1selidbe.rs/selidbe-zemun.html
+
 Redirect 301 /selidbe-zimi-zimske-selidbe.php https://a1selidbe.rs/selidbe-zimi-zimske-selidbe.html
+
 Redirect 301 /selidbe-zvezdara-selidbe-mirijevo.php https://a1selidbe.rs/selidbe-zvezdara-selidbe-mirijevo.html
+
 Redirect 301 /sta-ako-se-namestaj-ne-uklapa.php https://a1selidbe.rs/sta-ako-se-namestaj-ne-uklapa.html
+
 Redirect 301 /sta-izbaciti-pre-preseljenja-kancelarija.php https://a1selidbe.rs/sta-izbaciti-pre-preseljenja-kancelarija.html
+
 Redirect 301 /transport-namestaja https://a1selidbe.rs/transport-namestaja.html
+
 Redirect 301 /usluge-kombi-i-kamionski-prevoz.php https://a1selidbe.rs/usluge-kombi-i-kamionski-prevoz.html
+
 Redirect 301 /usluge-kombi-i-kamionski-prevoz.php-prevoz.php https://a1selidbe.rs/usluge-kombi-i-kamionski-prevoz.html
+
 Redirect 301 /usluge-montaza-i-demontaza-selidbe.php https://a1selidbe.rs/usluge-montaza-i-demontaza-selidbe.html
+
 Redirect 301 /usluge-najam-radnika.php https://a1selidbe.rs/usluge-najam-radnika.html
+
 Redirect 301 /usluge-odvoz-na-deponiju.php https://a1selidbe.rs/usluge-odvoz-na-deponiju.html
+
 Redirect 301 /usluge-prodaja-kartonskih-kutija-selidbe.php https://a1selidbe.rs/usluge-prodaja-kartonskih-kutija-selidbe.html
+
 Redirect 301 /usluge-selidbe-antikviteta.php https://a1selidbe.rs/usluge-selidbe-antikviteta.html
+
 Redirect 301 /usluge-transport-prevoz-beograd-srbija.php https://a1selidbe.rs/usluge-transport-prevoz-beograd-srbija.html
+
 Redirect 301 /vodic-u-8-koraka-o-tome-kako-mozete-bezbedno-spakovati-antikvitete.php https://a1selidbe.rs/vodic-u-8-koraka-o-tome-kako-mozete-bezbedno-spakovati-antikvitete.html
+
 Redirect 301 /vodic-za-selidbe-starijih-gradjana-penzionera.php https://a1selidbe.rs/vodic-za-selidbe-starijih-gradjana-penzionera.html
+
 Redirect 301 /zanimljive-cinjenice-o-selidbama-blog.php https://a1selidbe.rs/zanimljive-cinjenice-o-selidbama-blog.html
+
 Redirect 301 /zasto-angazovati-a1-selidbe.php https://a1selidbe.rs/zasto-angazovati-a1-selidbe.html
+
+
+# ==============================================================================
+# 5. FAQ REDIRECTS
+# ==============================================================================
+
 Redirect 301 /faq-items.php https://a1selidbe.rs/najcesca-pitanja.html
+
 Redirect 301 /faq-items/koliko-ce-trajati-moja-selidba.php https://a1selidbe.rs/najcesca-pitanja/koliko-ce-trajati-moja-selidba.html
+
 Redirect 301 /faq-items/da-li-vasi-radnici-iznose-stvari-na-visoke-spratove-u-slucaju-da-ne-postoji-ne-radi-nije-dovoljno-veliki-lift.php https://a1selidbe.rs/najcesca-pitanja/da-li-nosite-stvari-u-zgradama-bez-lifta.html
+
 Redirect 301 /faq-items/da-li-demontirate-i-ponovo-montirate-namestaj.php https://a1selidbe.rs/najcesca-pitanja/da-li-demontirate-i-ponovo-montirate-namestaj.html
+
 Redirect 301 /faq-items/da-li-pakujete-stvari-u-kutije-i-stitite-stvari.php https://a1selidbe.rs/najcesca-pitanja/da-li-pakujete-stvari-u-kutije-i-stitite-stvari.html
+
 Redirect 301 /faq-items/da-li-je-cena-usluge-skuplja-vikendom.php https://a1selidbe.rs/najcesca-pitanja/da-li-je-cena-usluge-skuplja-vikendom.html
+
 Redirect 301 /faq-items/kako-se-odredjuje-cena-selidbe.php https://a1selidbe.rs/najcesca-pitanja/kako-se-odredjuje-cena-selidbe.html
+
 Redirect 301 /faq-items/koliko-ranije-i-kako-zakazati-selidbu.php https://a1selidbe.rs/najcesca-pitanja/koliko-ranije-i-kako-zakazati-selidbu.html
 
 
+# ==============================================================================
+# 6. EXPIRES CACHING
+# ==============================================================================
 
-Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+<IfModule mod_expires.c>
 
-Header always set X-Frame-Options DENY
+    ExpiresActive On
 
-Header always set Referrer-Policy "same-origin"
+    # Images
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Fonts
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+
+    # CSS / JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+
+    # PDF
+    ExpiresByType application/pdf "access plus 1 month"
+
+    # Default
+    ExpiresDefault "access plus 1 month"
+
+</IfModule>
+
+
+# ==============================================================================
+# 7. CACHE-CONTROL
+# ==============================================================================
 
 <IfModule mod_headers.c>
-    Header set X-Content-Type-Options "nosniff"
+
+    # CSS i JavaScript - 1 mesec
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+
+    # Slike i fontovi - 1 godina
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|svg|ico|woff|woff2|ttf)$">
+        Header set Cache-Control "public, max-age=31536000"
+    </FilesMatch>
+
+    Header append Vary "Accept-Encoding"
+
 </IfModule>
+
+
+# ==============================================================================
+# 8. GZIP KOMPRESIJA
+# ==============================================================================
+
+<IfModule mod_deflate.c>
+
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+
+</IfModule>
+
+
+# ==============================================================================
+# 9. SECURITY HEADERS
+# ==============================================================================
+
+<IfModule mod_headers.c>
+
+    # Sprečava MIME sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Zaštita od clickjacking-a, uz dozvolu prikazivanja
+    # stranica sa istog domena unutar iframe-a
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Kontrola slanja referrer informacija
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # HTTPS samo
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+</IfModule>
+
+
+# ==============================================================================
+# 10. CUSTOM 404
+# ==============================================================================
+
+ErrorDocument 404 /404.html
