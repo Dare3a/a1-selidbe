@@ -187,29 +187,57 @@
     </div>
 </header>
 <main>
-    <section>
-        <div class="hero-div">
+    <section class="hero-section position-relative">
+        <div class="hero-div position-relative">
+            <!-- Slika ostaje u pozadini -->
             <picture>
-                <source media="(min-width: 934px)" srcset="images/a1-selidbe-hero.webp"
-                        type="image/webp">
-                <source media="(min-width: 934px)" srcset="images/a1-selidbe-hero.jpg"
-                        type="image/jpg">
-                <source media="(min-width: 501px)" srcset="images/a1-selidbe-hero_tab.webp"
-                        type="image/webp">
-                <source media="(min-width: 501px)" srcset="images/a1-selidbe-hero_tab.jpg"
-                        type="image/jpg">
-                <source media="(max-width: 500px)" srcset="images/a1-selidbe-hero_mob.webp"
-                        type="image/webp">
-                <source media="(max-width: 500px)" srcset="images/a1-selidbe-hero_mob.jpg"
-                        type="image/jpg">
+                <source media="(min-width: 934px)" srcset="images/a1-selidbe-hero.webp" type="image/webp">
+                <source media="(min-width: 934px)" srcset="images/a1-selidbe-hero.jpg" type="image/jpeg">
+                <source media="(min-width: 501px)" srcset="images/a1-selidbe-hero_tab.webp" type="image/webp">
+                <source media="(min-width: 501px)" srcset="images/a1-selidbe-hero_tab.jpg" type="image/jpeg">
+                <source media="(max-width: 500px)" srcset="images/a1-selidbe-hero_mob.webp" type="image/webp">
+                <source media="(max-width: 500px)" srcset="images/a1-selidbe-hero_mob.jpg" type="image/jpeg">
 
-                <img class="d-block img-fluid hero-img" src="images/a1-selidbe-hero.jpg"
-                     alt="a1 selidbe hero" width="2070" height="932">
+                <img class="d-block w-100 hero-img" src="images/a1-selidbe-hero.jpg"
+                     alt="A1 Selidbe Beograd - Profesionalni prevoz i selidbe"
+                     width="2070" height="932" fetchpriority="high">
             </picture>
-            <div class="d-flex flex-column hero-pozadina justify-content-center py-1">
-                <h1 class="mx-auto hero-cap text-center py-1">SELIDBE BEOGRAD -
-                    <span class="red">A1</span></h1>
-                <p class="mx-auto hero-p text-center p-1">Najbrže i najsigurnije selidbe u Srbiji</p>
+
+            <!-- Tamni overlay koji precizno prekriva celu sliku -->
+            <div class="hero-overlay d-flex align-items-center justify-content-center text-center">
+                <div class="container hero-content">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10">
+
+                            <h1 class="hero-cap mb-2">
+                                SELIDBE BEOGRAD <span class="red">A1</span>
+                            </h1>
+
+                            <p class="hero-p mb-3">
+                                Profesionalne selidbe stanova, kuća i kancelarija. Besplatna procena na terenu i
+                                dostupan prevoz po potrebi 00–24h.
+                            </p>
+
+                            <!-- Bedževi sa većim donjim marginom -->
+                            <div class="hero-features d-flex flex-wrap justify-content-center my-4">
+                                <span class="badge-item">✓ Kombi & Kamion</span>
+                                <span class="badge-item">✓ Bezbedan transport</span>
+                                <span class="badge-item">✓ Utovar i istovar</span>
+                            </div>
+
+                            <!-- Dugmad sa definisanim razmakom -->
+                            <div class="hero-cta d-flex flex-column flex-sm-row justify-content-center align-items-center">
+                                <a href="tel:+381607474363" class="btn btn-call w-100 w-sm-auto">
+                                    📞 Pozovite: 060 / 74 74 363
+                                </a>
+                                <a href="selidbe-kontakt-srbija-beograd.html" class="btn btn-outline w-100 w-sm-auto">
+                                    Zatražite procenu
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
