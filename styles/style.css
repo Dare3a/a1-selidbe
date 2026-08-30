@@ -6421,6 +6421,7 @@ ul, ol {
 .toc-arrow {
     font-size: 0.75rem;
     transition: transform 0.3s ease;
+    color: #e60000;
 }
 
 .toc-arrow.rotated {
@@ -6453,7 +6454,7 @@ ul, ol {
 .toc-link:hover {
     color: #e60000; /* Crvena na hover */
     background-color: #f8f9fa;
-    transform: translateX(3px);
+    transform: translateX(2px);
 }
 
 /* Stilizovani brojevi pored stavki */
@@ -6463,17 +6464,12 @@ ul, ol {
     justify-content: center;
     width: 22px;
     height: 22px;
-    background-color: #e9ecef;
-    color: #495057;
+    background-color: #e60000;
+    color: #ffffff;
     font-size: 0.75rem;
     font-weight: bold;
     border-radius: 50%;
     transition: all 0.2s ease;
-}
-
-.toc-link:hover .toc-badge {
-    background-color: #e60000;
-    color: #ffffff;
 }
 
 /* Dodaje prostor iznad naslova prilikom skoka sa TOC linka */
