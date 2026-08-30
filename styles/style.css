@@ -6382,3 +6382,96 @@ ul, ol {
 .cene-index {
     background-color: #fff5f5;
 }
+
+/* Glavni kontejner TOC-a */
+.toc-card {
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+/* uklanjanje tačaka sa TOC liste */
+.toc-card ul,
+.toc-card li {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Dugme zaglavlja */
+.toc-btn {
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease;
+}
+
+.toc-btn:hover {
+    background-color: #f1f3f5 !important;
+}
+
+/* Crveni akcenat pored naslova u stilu tvog brenda */
+.toc-accent-line {
+    display: inline-block;
+    width: 14px;
+    height: 4px;
+    background-color: #e60000; /* Prilagodi tačnu crvenu nijansu tvog sajta */
+    border-radius: 2px;
+}
+
+/* Strelica */
+.toc-arrow {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.toc-arrow.rotated {
+    transform: rotate(-180deg);
+}
+
+/* Glatko skupljanje/širenje */
+.toc-content {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.35s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.toc-content.collapsed {
+    max-height: 0 !important;
+    opacity: 0;
+}
+
+/* Stilovi linkova */
+.toc-link {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.toc-link:hover {
+    color: #e60000; /* Crvena na hover */
+    background-color: #f8f9fa;
+    transform: translateX(3px);
+}
+
+/* Stilizovani brojevi pored stavki */
+.toc-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background-color: #e9ecef;
+    color: #495057;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.toc-link:hover .toc-badge {
+    background-color: #e60000;
+    color: #ffffff;
+}

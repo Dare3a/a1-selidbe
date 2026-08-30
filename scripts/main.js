@@ -79,3 +79,21 @@ function resetForm() {
         kontaktForma.reset();
     }, 1000);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("tocToggleBtn");
+    const content = document.getElementById("tocContent");
+    const arrow = document.getElementById("tocArrow");
+
+    // Provera širine ekrana: Ako je mobilni (< 768px), zatvori po defaultu
+    if (window.innerWidth < 768) {
+        content.classList.add("collapsed");
+        arrow.classList.add("rotated");
+    }
+
+    // Klik događaj za otvaranje / zatvaranje
+    btn.addEventListener("click", function () {
+        content.classList.toggle("collapsed");
+        arrow.classList.toggle("rotated");
+    });
+});
