@@ -176,9 +176,21 @@ Redirect 301 /zanimljive-cinjenice-o-selidbama-blog.php https://a1selidbe.rs/zan
 
 Redirect 301 /zasto-angazovati-a1-selidbe.php https://a1selidbe.rs/zasto-angazovati-a1-selidbe.html
 
+# ==============================================================================
+# 5. PAGES
+# ==============================================================================
+
+# Redirekcija za HTML PHP / WordPress verzije i celokupan folder /selidbe/page/
+
+Redirect 301 /selidbe/page/2.html https://a1selidbe.rs/selidbe.html
+Redirect 301 /selidbe/page/3.html https://a1selidbe.rs/selidbe.html
+Redirect 301 /selidbe/page/2.php https://a1selidbe.rs/selidbe.html
+Redirect 301 /selidbe/page/3.php https://a1selidbe.rs/selidbe.html
+Redirect 301 /selidbe/page/2 https://a1selidbe.rs/selidbe.html
+Redirect 301 /selidbe/page/3 https://a1selidbe.rs/selidbe.html
 
 # ==============================================================================
-# 5. FAQ REDIRECTS
+# 6. FAQ REDIRECTS
 # ==============================================================================
 
 Redirect 301 /faq-items.php https://a1selidbe.rs/najcesca-pitanja.html
