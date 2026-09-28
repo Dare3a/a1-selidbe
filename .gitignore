@@ -1,0 +1,16 @@
+# JetBrains / WebStorm IDE fajlovi
+.idea/
+
+# Node dependencies (ako koristiš npm/Vite/Tailwind)
+node_modules/
+dist/
+.vite/
+
+# Operativni sistemi i ostali sistemski fajlovi
+.DS_Store
+Thumbs.db
+*.log
+
+# Environment varijable
+.env
+.env.local
