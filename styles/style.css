@@ -6480,3 +6480,23 @@ h2[id], h3[id] {
 html {
     scroll-behavior: smooth;
 }
+
+.hamburgerX, .hamburgerHam {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 48px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.hamburgerX {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.hamburgerHam {
+    font-size: 28px;
+}
