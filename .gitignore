@@ -1,16 +1,18 @@
 # JetBrains / WebStorm IDE fajlovi
 .idea/
+*.iws
+*.iml
+*.ipr
 
-# Node dependencies (ako koristiš npm/Vite/Tailwind)
-node_modules/
-dist/
-.vite/
+# Composer dependencies (ako ikada dodaš neku PHP biblioteku, npr. PHPMailer)
+/vendor/
 
-# Operativni sistemi i ostali sistemski fajlovi
+# Operativni sistemi i sistemski fajlovi
 .DS_Store
 Thumbs.db
 *.log
 
-# Environment varijable
+# Environment varijable i privatne konfiguracije (npr. SMTP lozinke za PHP formu)
 .env
 .env.local
+config.local.php
