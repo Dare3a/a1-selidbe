@@ -68,15 +68,12 @@
         <div class="row py-2 menu">
 
             <!-- Logo sekcija -->
-            <div class="col-2">
+            <div class="col-2 d-flex align-items-center">
                 <div class="d-flex">
                     <a href="https://a1selidbe.rs/" aria-label="A1 Selidbe Početna">
                         <picture>
-                            <source media="(min-width: 577px)" srcset="images/logo/logo-75.webp" type="image/webp">
-                            <source media="(min-width: 577px)" srcset="images/logo/logo-75.png" type="image/png">
-                            <source media="(max-width: 576px)" srcset="images/logo/logo-75.webp" type="image/webp">
-                            <source media="(max-width: 576px)" srcset="images/logo/logo-75.png" type="image/png">
-                            <img class="img-fluid m-1" src="images/logo/logo-75.png" width="112" height="75"
+                            <source srcset="images/logo/logo-75.webp" type="image/webp">
+                            <img class="img-fluid" src="images/logo/logo-75.png" width="112" height="75"
                                  alt="A1 selidbe logo">
                         </picture>
                     </a>
@@ -94,7 +91,7 @@
                 <ul id="nav" class="nav d-xl-flex justify-content-center align-items-center flex-md-row d-none">
                     <li class="mx-1"><a href="https://a1selidbe.rs/">Početna</a></li>
 
-                    <li class="aktivno">
+                    <li>
                         <a href="selidbe.html">Usluge</a><span id="uslugeStrelica"> &#9660;</span>
                         <ul id="uslugeMenu" class="dropdown-menu">
                             <li><a class="dropdown-item" href="kombi-selidbe-beograd.html">Kombi selidbe Beograd</a>
@@ -169,7 +166,7 @@
                         </ul>
                     </li>
 
-                    <li class="mx-1">
+                    <li class="mx-1 aktivno">
                         <a href="selidbe-cene-beograd.html">Cene selidbe</a><span id="ceneSelidbe"> &#9660;</span>
                         <ul id="ceneSelidbeMenu" class="dropdown-menu">
                             <li><a class="dropdown-item" href="selidbe-beograd-cena.html">Cene selidbe Beograd</a></li>
@@ -178,7 +175,8 @@
                                 procena selidbe</a></li>
                             <li><a class="dropdown-item" href="selidbe-cene-beograd-upitnik-kalkulator.html">Upitnik
                                 cene selidbe</a></li>
-                            <li><a class="dropdown-item" href="selidbe-akcije.html">Selidbe akcije</a></li>
+                            <li class="aktivno"><a class="dropdown-item" href="selidbe-akcije.html">Selidbe akcije</a>
+                            </li>
                         </ul>
                     </li>
 

@@ -63,129 +63,137 @@
 <body>
 <header>
     <div class="container">
-        <div class="row py-2 menu">
-            <div class="col-2">
+        <div class="row py-2 menu align-items-center">
+
+            <!-- Logo sekcija -->
+            <div class="col-2 d-flex align-items-center">
                 <div class="d-flex">
-                    <a href="https://a1selidbe.rs/">
+                    <a href="https://a1selidbe.rs/" aria-label="A1 Selidbe Početna">
                         <picture>
-                            <source media="(min-width: 577px)" srcset="images/logo/logo-75.webp"
-                                    type="image/webp">
-                            <source media="(min-width: 577px)" srcset="images/logo/logo-75.png"
-                                    type="image/png">
-
-                            <source media="(max-width: 576px)" srcset="images/logo/logo-75.webp"
-                                    type="image/webp">
-                            <source media="(max-width: 576px)" srcset="images/logo/logo-75.png"
-                                    type="image/png">
-
-                            <img class="img-fluid m-1" src="images/logo/logo-75.png" width="112" height="75"
+                            <source srcset="images/logo/logo-75.webp" type="image/webp">
+                            <img class="img-fluid" src="images/logo/logo-75.png" width="112" height="75"
                                  alt="A1 selidbe logo">
                         </picture>
                     </a>
                 </div>
             </div>
-            <div id="hamburger"
-                 class="col-3 d-xl-none d-flex align-self-center justify-content-center ms-auto">
-                <span id="hamburgerImg" class="hamburgerHam">&equiv;</span></div>
-            <ul id="nav"
-                class="col-md-10 col-12 nav d-xl-flex justify-content-center align-items-center flex-md-row d-none">
-                <li class="mx-1"><a href="https://a1selidbe.rs/">Početna</a></li>
-                <li>
-                    <a href="selidbe.html">Usluge</a><span id="uslugeStrelica"> &#9660;
-                </span>
-                    <ul id="uslugeMenu" class="dropdown-menu">
-                        <li><a class="dropdown-item" href="kombi-selidbe-beograd.html">Kombi selidbe Beograd</a></li>
-                        <li><a class="dropdown-item" href="selidbe-poslovnih-prostora.html">Selidbe poslovnih
-                            prostora</a></li>
-                        <li><a class="dropdown-item" href="selidbe-klavira.html">Selidbe klavira</a></li>
-                        <li><a class="dropdown-item" href="selidbe-srbija.html">Selidbe Srbija</a></li>
-                        <li><a class="dropdown-item" href="selidbe-pancevo.html">Selidbe Pančevo</a></li>
-                        <li><a class="dropdown-item" href="selidbe-indjija.html">Selidbe Inđija</a></li>
-                        <li><a class="dropdown-item" href="selidbe-nova-pazova.html">Selidbe Nova Pazova</a></li>
-                        <li><a class="dropdown-item" href="usluge-selidbe-antikviteta.html">Selidbe antikviteta</a></li>
-                        <li><a class="dropdown-item" href="selidbe-inostranstvo.html">Selidbe inostranstvo</a></li>
-                        <li><a class="dropdown-item" href="usluge-prodaja-kartonskih-kutija-selidbe.html">Kartonske
-                            kutije za selidbe</a></li>
-                        <li><a class="dropdown-item" href="selidba-specijalnog-tereta.html">Selidba specijalnog
-                            tereta</a></li>
-                        <li><a class="dropdown-item" href="usluge-montaza-i-demontaza-selidbe.html">Usluge montaže i
-                            demontaže</a></li>
-                        <li><a class="dropdown-item" href="selidbe-magacin.html">Skladištenje stvari</a></li>
-                        <li><a class="dropdown-item" href="pakovanje-stvari.html">Pakovanje stvari</a></li>
-                        <li><a class="dropdown-item" href="usluge-najam-radnika.html">Najam radnika za selidbe</a></li>
-                        <li><a class="dropdown-item" href="dostava-namestaja-ikea.html">Dostava nameštaja Ikea</a></li>
-                        <li><a class="dropdown-item" href="medjugradske-selidbe.html">Međugradske selidbe</a></li>
-                        <li><a class="dropdown-item" href="selidbe-stanova.html">Selidbe stanova</a></li>
-                        <li><a class="dropdown-item" href="manje-selidbe.html">Manje selidbe</a></li>
-                        <li><a class="dropdown-item" href="selidbe-firmi-i-kancelarija.html">Selidbe
-                            firmi i kancelarija</a></li>
-                    </ul>
-                </li>
-                <li class="aktivno">
-                    <a href="selidbe-beograd.html">Selidbe u Beogradu</a><span id="selidbeBgStrelica"> &#9660;
-                </span>
-                    <ul id="selidbeBgMenu" class="dropdown-menu">
-                        <li><a class="dropdown-item" href="selidbe-vracar.html">Selidbe Vračar</a></li>
-                        <li><a class="dropdown-item" href="selidbe-vozdovac.html">Selidbe Voždovac</a></li>
-                        <li><a class="dropdown-item" href="selidbe-novi-beograd.html">Selidbe Novi Beograd</a></li>
-                        <li><a class="dropdown-item" href="selidbe-zemun.html">Selidbe Zemun</a></li>
-                        <li><a class="dropdown-item" href="selidbe-zvezdara-selidbe-mirijevo.html">Selidbe Zvezdara -
-                            Mirijevo</a></li>
-                        <li><a class="dropdown-item" href="selidbe-palilula.html">Selidbe Palilula</a>
-                        </li>
-                        <li class="aktivno"><a class="dropdown-item" href="selidbe-cukarica.html">Selidbe Čukarica</a>
-                        </li>
-                        <li><a class="dropdown-item" href="selidbe-obrenovac.html">Selidbe Obrenovac</a></li>
-                        <li><a class="dropdown-item" href="selidbe-sopot.html">Selidbe Sopot</a></li>
-                        <li><a class="dropdown-item" href="selidbe-rakovica.html">Selidbe Rakovica</a></li>
-                        <li><a class="dropdown-item" href="selidbe-grocka.html">Selidbe Grocka</a></li>
-                        <li><a class="dropdown-item" href="selidbe-surcin.html">Selidbe Surčin</a></li>
-                        <li><a class="dropdown-item" href="selidbe-beograd-na-vodi.html">Selidbe Beograd na vodi</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="mx-1"><a href="prevoz.html">Prevoz</a><span id="prevozStrelica"> &#9660;</span>
-                    <ul id="prevozMenu" class="dropdown-menu">
-                        <li><a class="dropdown-item" href="usluge-transport-prevoz-beograd-srbija.html">Transport prevoz
-                            Beograd Srbija</a></li>
-                        <li><a class="dropdown-item" href="kombi-prevoz-beograd.html">Kombi prevoz Beograd</a></li>
-                        <li><a class="dropdown-item" href="usluge-kombi-i-kamionski-prevoz.html">Kombi i kamionski
-                            prevoz</a></li>
-                        <li><a class="dropdown-item" href="usluge-odvoz-na-deponiju.html">Odvoz stvari na deponiju</a>
-                        </li>
-                        <li><a class="dropdown-item" href="transport-namestaja.html">Transport
-                            nameštaja</a></li>
-                        <li><a class="dropdown-item" href="prevoz-bele-tehnike.html">Prevoz bele
-                            tehnike</a></li>
-                        <li><a class="dropdown-item" href="prevoz-i-selidbe.html">Prevoz i selidbe</a></li>
-                        <li><a class="dropdown-item" href="odnosenje-starog-namestaja.html">Odnošenje starog
-                            nameštaja</a></li>
-                    </ul>
-                </li>
-                <li class="mx-1"><a href="selidbe-cene-beograd.html">Cene selidbe</a><span
-                        id="ceneSelidbe"> &#9660;</span>
-                    <ul id="ceneSelidbeMenu" class="dropdown-menu">
-                        <li><a class="dropdown-item" href="selidbe-beograd-cena.html">Cene selidbe Beograd</a></li>
-                        <li><a class="dropdown-item"
-                               href="besplatna-procena-selidbe-umesto-dogovaranja-cene-telefonom-blog.html">Besplatna
-                            procena selidbe</a></li>
-                        <li><a class="dropdown-item" href="selidbe-cene-beograd-upitnik-kalkulator.html">Upitnik cene
-                            selidbe</a></li>
-                        <li><a class="dropdown-item" href="selidbe-akcije.html">Selidbe akcije</a></li>
-                    </ul>
-                </li>
-                <li class="mx-1"><a href="#">Više</a><span id="onamaStrelica"> &#9660;</span>
-                    <ul id="onamaMenu" class="dropdown-menu">
-                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                        <li><a class="dropdown-item" href="selidbe-preporuke-beograd-srbija.html">Preporuke i
-                            reference</a></li>
-                        <li><a class="dropdown-item" href="selidbe-galerija-beograd-srbija.html">Foto galerija</a></li>
-                        <li><a class="dropdown-item" href="najcesca-pitanja.html">Najčešća pitanja</a></li>
-                    </ul>
-                </li>
-                <li><a href="selidbe-kontakt-srbija-beograd.html">Kontakt</a></li>
-            </ul>
 
+            <!-- Hamburger dugme za mobilne uređaje -->
+            <div id="hamburger" class="col-3 d-xl-none d-flex align-self-center justify-content-center ms-auto"
+                 role="button" aria-label="Otvori meni">
+                <span id="hamburgerImg" class="hamburgerHam">&equiv;</span>
+            </div>
+
+            <!-- Semantička HTML5 Navigacija -->
+            <nav aria-label="Glavni meni" class="col-md-10 col-12 align-self-center">
+                <ul id="nav" class="nav d-xl-flex justify-content-center align-items-center flex-md-row d-none">
+                    <li class="mx-1"><a href="https://a1selidbe.rs/">Početna</a></li>
+
+                    <li>
+                        <a href="selidbe.html">Usluge</a><span id="uslugeStrelica"> &#9660;</span>
+                        <ul id="uslugeMenu" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="kombi-selidbe-beograd.html">Kombi selidbe Beograd</a>
+                            </li>
+                            <li><a class="dropdown-item" href="selidbe-poslovnih-prostora.html">Selidbe poslovnih
+                                prostora</a></li>
+                            <li><a class="dropdown-item" href="selidbe-klavira.html">Selidbe klavira</a></li>
+                            <li><a class="dropdown-item" href="selidbe-srbija.html">Selidbe Srbija</a></li>
+                            <li><a class="dropdown-item" href="selidbe-pancevo.html">Selidbe Pančevo</a></li>
+                            <li><a class="dropdown-item" href="selidbe-indjija.html">Selidbe Inđija</a></li>
+                            <li><a class="dropdown-item" href="selidbe-nova-pazova.html">Selidbe Nova Pazova</a></li>
+                            <li><a class="dropdown-item" href="usluge-selidbe-antikviteta.html">Selidbe antikviteta</a>
+                            </li>
+                            <li><a class="dropdown-item" href="selidbe-inostranstvo.html">Selidbe inostranstvo</a></li>
+                            <li><a class="dropdown-item" href="usluge-prodaja-kartonskih-kutija-selidbe.html">Kartonske
+                                kutije za selidbe</a></li>
+                            <li><a class="dropdown-item" href="selidba-specijalnog-tereta.html">Selidba specijalnog
+                                tereta</a></li>
+                            <li><a class="dropdown-item" href="usluge-montaza-i-demontaza-selidbe.html">Usluge montaže i
+                                demontaže</a></li>
+                            <li><a class="dropdown-item" href="selidbe-magacin.html">Skladištenje stvari</a></li>
+                            <li><a class="dropdown-item" href="pakovanje-stvari.html">Pakovanje stvari</a></li>
+                            <li><a class="dropdown-item" href="usluge-najam-radnika.html">Najam radnika za selidbe</a>
+                            </li>
+                            <li><a class="dropdown-item" href="dostava-namestaja-ikea.html">Dostava nameštaja Ikea</a>
+                            </li>
+                            <li><a class="dropdown-item" href="medjugradske-selidbe.html">Međugradske selidbe</a></li>
+                            <li><a class="dropdown-item" href="selidbe-stanova.html">Selidbe stanova</a></li>
+                            <li><a class="dropdown-item" href="manje-selidbe.html">Manje selidbe</a></li>
+                            <li><a class="dropdown-item" href="selidbe-firmi-i-kancelarija.html">Selidbe firmi i
+                                kancelarija</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="aktivno">
+                        <a href="selidbe-beograd.html">Selidbe u Beogradu</a><span
+                            id="selidbeBgStrelica"> &#9660;</span>
+                        <ul id="selidbeBgMenu" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="selidbe-vracar.html">Selidbe Vračar</a></li>
+                            <li><a class="dropdown-item" href="selidbe-vozdovac.html">Selidbe Voždovac</a></li>
+                            <li><a class="dropdown-item" href="selidbe-novi-beograd.html">Selidbe Novi Beograd</a></li>
+                            <li><a class="dropdown-item" href="selidbe-zemun.html">Selidbe Zemun</a></li>
+                            <li><a class="dropdown-item" href="selidbe-zvezdara-selidbe-mirijevo.html">Selidbe Zvezdara
+                                - Mirijevo</a></li>
+                            <li><a class="dropdown-item" href="selidbe-palilula.html">Selidbe Palilula</a></li>
+                            <li class="aktivno"><a class="dropdown-item" href="selidbe-cukarica.html">Selidbe
+                                Čukarica</a></li>
+                            <li><a class="dropdown-item" href="selidbe-obrenovac.html">Selidbe Obrenovac</a></li>
+                            <li><a class="dropdown-item" href="selidbe-sopot.html">Selidbe Sopot</a></li>
+                            <li><a class="dropdown-item" href="selidbe-rakovica.html">Selidbe Rakovica</a></li>
+                            <li><a class="dropdown-item" href="selidbe-grocka.html">Selidbe Grocka</a>
+                            </li>
+                            <li><a class="dropdown-item" href="selidbe-surcin.html">Selidbe Surčin</a></li>
+                            <li><a class="dropdown-item" href="selidbe-beograd-na-vodi.html">Selidbe Beograd na vodi</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mx-1">
+                        <a href="prevoz.html">Prevoz</a><span id="prevozStrelica"> &#9660;</span>
+                        <ul id="prevozMenu" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="usluge-transport-prevoz-beograd-srbija.html">Transport
+                                prevoz Beograd Srbija</a></li>
+                            <li><a class="dropdown-item" href="kombi-prevoz-beograd.html">Kombi prevoz Beograd</a></li>
+                            <li><a class="dropdown-item" href="usluge-kombi-i-kamionski-prevoz.html">Kombi i kamionski
+                                prevoz</a></li>
+                            <li><a class="dropdown-item" href="usluge-odvoz-na-deponiju.html">Odvoz stvari na
+                                deponiju</a></li>
+                            <li><a class="dropdown-item" href="transport-namestaja.html">Transport nameštaja</a></li>
+                            <li><a class="dropdown-item" href="prevoz-bele-tehnike.html">Prevoz bele tehnike</a></li>
+                            <li><a class="dropdown-item" href="prevoz-i-selidbe.html">Prevoz i selidbe</a></li>
+                            <li><a class="dropdown-item" href="odnosenje-starog-namestaja.html">Odnošenje starog
+                                nameštaja</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="mx-1">
+                        <a href="selidbe-cene-beograd.html">Cene selidbe</a><span id="ceneSelidbe"> &#9660;</span>
+                        <ul id="ceneSelidbeMenu" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="selidbe-beograd-cena.html">Cene selidbe Beograd</a></li>
+                            <li><a class="dropdown-item"
+                                   href="besplatna-procena-selidbe-umesto-dogovaranja-cene-telefonom-blog.html">Besplatna
+                                procena selidbe</a></li>
+                            <li><a class="dropdown-item" href="selidbe-cene-beograd-upitnik-kalkulator.html">Upitnik
+                                cene selidbe</a></li>
+                            <li><a class="dropdown-item" href="selidbe-akcije.html">Selidbe akcije</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="mx-1">
+                        <a href="#">Više</a><span id="onamaStrelica"> &#9660;</span>
+                        <ul id="onamaMenu" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="selidbe-preporuke-beograd-srbija.html">Preporuke i
+                                reference</a></li>
+                            <li><a class="dropdown-item" href="selidbe-galerija-beograd-srbija.html">Foto galerija</a>
+                            </li>
+                            <li><a class="dropdown-item" href="najcesca-pitanja.html">Najčešća pitanja</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="selidbe-kontakt-srbija-beograd.html">Kontakt</a></li>
+                </ul>
+            </nav>
 
         </div>
     </div>
