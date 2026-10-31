@@ -6084,60 +6084,6 @@ ul, ol {
     display: block;
 }
 
-/*česta pitanja stranica*/
-
-.sekcija-pitanja {
-    background-color: #fff5f5;
-    padding: 60px 20px;
-    border: 2px solid #ff0000;
-    border-radius: 12px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.cpp-title {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.cpp-items {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.cpp-item {
-    border: 1px solid #ffcccc;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.pitanje {
-    background-color: #ff0000;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 15px 20px;
-    border: none;
-    text-align: left;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.pitanje:hover {
-    background-color: #cc0000;
-}
-
-.sekcija-pitanja a {
-    color: white;
-}
-
-.sekcija-pitanja a:hover {
-    color: white;
-}
-
 .opstine-beograd{
     max-width:1200px;
     margin:60px auto;
