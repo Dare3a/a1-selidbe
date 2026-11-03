@@ -6446,3 +6446,7 @@ html {
 .hamburgerHam {
     font-size: 28px;
 }
+
+.pointer-cursor {
+    cursor: pointer;
+}
